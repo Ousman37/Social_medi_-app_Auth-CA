@@ -87,17 +87,7 @@ header {
   box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
   margin-bottom: -11rem;
 }
-/*
-.form-control {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  padding: 2rem;
-  width: 530px;
-  height: 600px;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-}*/
+
 /*---  Form input ----*/
 .form-control {
   width: 100%;
@@ -168,7 +158,7 @@ label {
 /* Posts Page!*/
 
 /*----- footer ----- */
-@media (min-width: 62em) {
+@media (min-width: 280px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -177,9 +167,9 @@ label {
     bottom: 0;
     width: 100%;
   }
-  .logo h1 {
+  .logo {
     margin-right: 1em;
-    width: 14em;
+    width: 10em;
   }
 }
 
@@ -221,11 +211,6 @@ label {
   }*/
 }
 
-.btn-primary {
-  background-color: $primary-color;
-  width: 100%;
-  margin-bottom: 1rem;
-}
 
 .helper-text {
   color: tomato;
@@ -250,7 +235,7 @@ label {
     margin-left: 7.5rem;
     margin-bottom: 0rem;
   }
- 
+
   .form-control {
     width: 263px;
   }
@@ -336,36 +321,47 @@ label {
   .tag a {
     font-size: 1rem;
   }
+
+  .helper-text {
+    color: tomato;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
-.btn-primary {
-  background-color: $primary-color;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}
-@media (min-width: 428px) {
+@media (min-width: 412px) {
   .form-control {
     width: 323px;
   }
 }
 
-
-@media (min-width: 428px) {
+@media (min-width: 414px) {
   .form-control {
-    width: 290px;
+    width: 319px;
   }
 }
 
 @media (min-width: 428px) {
   .form-control {
-    width: 335px;
+    width: 462px;
+  }
+}
+@media (min-width: 540px) {
+  .form-control {
+    width: 452px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-control {
+    width: 674px;
   }
 }
 
@@ -386,7 +382,7 @@ label {
     margin-bottom: 0rem;
   }
   .form-control {
-    width: 706px;
+    width: 809px;
   }
 }
 
@@ -399,6 +395,9 @@ label {
     bottom: 0;
     width: 100%;
   }
+  .form-control {
+    width: 725px;
+  }
 
   .logo {
     width: 10em;
@@ -406,11 +405,9 @@ label {
     margin-left: 7.5rem;
     margin-bottom: 0rem;
   }
-  .form-control {
-    width: 443px;
-  }
+
   .form-signin {
-    width: 57%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: -50rem;
     height: 100%;
@@ -427,54 +424,40 @@ label {
     border-radius: 0.25rem;
     border: 1px solid #e6e6e6;
   }
-  .btn,
-  .btn-light,
-  .tag a {
+
+  .helper-text {
+    color: tomato;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: 1rem;
   }
 }
 
-.btn-primary {
-  background-color: $primary-color;
-  width: 100%;
-  margin-bottom: 1rem;
+@media (min-width: 912px) {
+  .form-control {
+    width: 822px;
+  }
 }
 
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}
-/*
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 1024px) {
   .form-control {
-    width: 458px;
+    width: 928px;
   }
-*/
-@media (orientation: landscape) and (min-width: 1280px) {
-  .account-signup-reg,
-  .account-signup {
-    max-width: 524px;
-    padding: 15px 115px;
+  .form-signin {
+    width: 90%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 10rem;
-  }
-
-  .form-control {
-    width: 701px;
+    margin-bottom: -50rem;
+    height: 100%;
   }
 }
-
-@media (orientation: landscape) and (max-height: 500px) {
-  .header {
-    height: 90vmax;
+@media (min-width: 1280px) {
+  .form-control {
+    width: 1035px;
   }
-  .content {
-    position: absolute;
-    top: 51%;
-    left: 47%;
-    transform: translate(-50%, -50%);
+  .form-signin {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: -50rem;
+    height: 100%;
   }
 }

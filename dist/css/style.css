@@ -1,19 +1,40 @@
-@import 'variables';
+/* Color */
+/* font size */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-@import 'base';
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
 
 .container_log a {
   height: 1em;
   margin-right: 2em;
   width: 14em;
-  color: $light-color;
+  color: #f4f4f4;
   display: inline-block;
   font-size: 1.5em;
   text-align: center;
   line-height: 1em;
   font-weight: bold;
   margin-left: 0.5em;
-  font-family: $font-family;
+  font-family: "Roboto";
   font-weight: bold;
   top: 10rem;
   text-transform: uppercase;
@@ -29,9 +50,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: $primary-color;
-  color: $light-color;
-  border-bottom: 1px solid $primary-color;
+  background-color: #17a2b8;
+  color: #f4f4f4;
+  border-bottom: 1px solid #17a2b8;
   width: 100%;
   z-index: 88;
 }
@@ -47,14 +68,14 @@
   height: 1em;
   margin-right: 2em;
   width: 14em;
-  color: $light-color;
+  color: #f4f4f4;
   display: inline-block;
   font-size: 1.5em;
   text-align: center;
   line-height: 1em;
   font-weight: bold;
   margin-left: 0.5em;
-  font-family: $font-family;
+  font-family: "Roboto";
   font-weight: bold;
   top: 10rem;
   text-transform: uppercase;
@@ -64,9 +85,9 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: $primary-color;
-  color: $light-color;
-  border-bottom: 1px solid $primary-color;
+  background-color: #17a2b8;
+  color: #f4f4f4;
+  border-bottom: 1px solid #17a2b8;
   width: 100%;
 }
 
@@ -86,7 +107,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1em;
-  color: $light-color;
+  color: #f4f4f4;
 }
 
 /*---  Register -----*/
@@ -100,19 +121,19 @@
 /*---  Form input ----*/
 form input {
   width: 350px;
-  border: 1px solid $light-color;
-  border-radius: $border-radius;
+  border: 1px solid #f4f4f4;
+  border-radius: 0.25rem;
   padding: 0.5rem;
   font-size: 1em;
   font-size: 16px;
   padding: 10px;
   box-sizing: border-box;
   height: auto;
-  border-radius: $border-radius;
+  border-radius: 0.25rem;
 }
 
 .container_bg {
-  background-color: $light-color;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,9 +156,9 @@ form input {
   justify-content: center;
   align-items: center;
   min-height: 10vh;
-  background-color: $light-color;
+  background-color: #f4f4f4;
   border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
   margin-bottom: 10rem;
   padding: 1rem;
 }
@@ -162,8 +183,9 @@ form input {
   margin-top: 1rem;
   margin-left: 1rem;
 }
+
 .card {
-  border: 1px solid #cccc;
+  border: 1px solid rgba(204, 204, 204, 0.8);
   border-radius: 0.25rem;
   padding: 0.5rem;
   display: flex;
@@ -180,7 +202,7 @@ form input {
 
 .card > .body {
   font-size: 0.8rem;
-  color: $light-col;
+  color: rgba(119, 119, 119, 0.4666666667);
 }
 
 .form-group {
@@ -189,17 +211,17 @@ form input {
   align-items: flex-start;
   justify-content: center;
   padding: -1em;
-  box-shadow: $danger-color;
+  box-shadow: #dc3545;
 }
 
 /*----- Buttons  Register---- */
 .button {
-  background: $black-col;
-  color: $light-color;
-  border-radius: $border-radius-lg;
+  background: #555555;
+  color: #f4f4f4;
+  border-radius: 0.1rem;
   padding: 0.5rem 2rem;
-  font-size: $font-size-base;
-  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: capitalize;
   transition: all 0.2s ease-in-out;
   display: inline-block;
@@ -209,38 +231,35 @@ form input {
   cursor: pointer;
   margin-right: 1rem;
   margin-top: 2rem;
-
-  &:hover {
-    background: $dark-color;
-    color: $light-color;
-  }
 }
+.button:hover {
+  background: #343a40;
+  color: #f4f4f4;
+}
+
 /*----- Buttons  login----  */
 .btn-dark {
-  background: $light-grey-col;
+  background: #e7e7e7;
   outline: none;
   padding: 0.5rem 2rem;
-  font-size: $font-size-base;
-  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: capitalize;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   text-align: center;
   outline: none;
   cursor: pointer;
-  color: $black-col;
-
-  &:hover {
-    background-color: $light-grey-col;
-    color: $black-col;
-  }
+  color: #555555;
+}
+.btn-dark:hover {
+  background-color: #e7e7e7;
+  color: #555555;
 }
 
 .tag a {
-  color: $primary-color;
+  color: #17a2b8;
 }
-
-
 
 /*---- language ------*/
 .language {
@@ -251,11 +270,10 @@ form input {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
-  border-radius: $border-radius;
+  border-radius: 0.25rem;
 }
 
 /* Posts Page!*/
-
 /*----- footer ----- */
 @media (min-width: 62em) {
   .footer {
@@ -271,7 +289,6 @@ form input {
     width: 14em;
   }
 }
-
 @media (min-width: 375px) {
   .footer {
     display: flex;
@@ -285,12 +302,10 @@ form input {
     margin-right: 1em;
     width: 10em;
   }
-
   form input {
     width: 287px;
   }
 }
-
 .btn,
 .btn-light,
 .tag a {
@@ -298,7 +313,7 @@ form input {
 }
 
 .btn-primary {
-  background-color: $primary-color;
+  background-color: #17a2b8;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -318,21 +333,20 @@ form input {
   justify-content: center;
   align-items: center;
   min-height: 10vh;
-  background-color: $light-color;
+  background-color: #f4f4f4;
   border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
   margin-bottom: 10rem;
   padding: 1rem;
 }
 
-// SINGLE POST PAGE
 /*
 .single-page-container {
     width: 80%;
     min-width: 310px;
     margin: auto;
     padding: 21px;
-    
+
     box-shadow: 6px 6px 7px -4px grey;
 }*/
 .single-page-container {
@@ -340,15 +354,17 @@ form input {
   min-width: 310px;
   margin: auto;
   padding: 19px;
-  background-color: #425d6e78;
+  background-color: rgba(66, 93, 110, 0.4705882353);
   box-shadow: 6px 6px 7px -4px gray;
 }
+
 .single-title {
   text-align: center;
   margin: auto;
   padding: 5px;
   background-color: red;
 }
+
 .single-page-img {
   width: 55vw;
   height: 40vw;
@@ -370,12 +386,10 @@ form input {
     margin-right: 1em;
     width: 10em;
   }
-
   form input {
     width: 305px;
   }
 }
-
 .btn,
 .btn-light,
 .tag a {
@@ -383,7 +397,7 @@ form input {
 }
 
 .btn-primary {
-  background-color: $primary-color;
+  background-color: #17a2b8;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -403,9 +417,9 @@ form input {
   justify-content: center;
   align-items: center;
   min-height: 10vh;
-  background-color: $light-color;
+  background-color: #f4f4f4;
   border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
   margin-bottom: 10rem;
   padding: 1rem;
 }
@@ -436,7 +450,6 @@ form input {
     color: #fff;
   }
 }
-
 @media (min-width: 375px) {
   .single-page-img {
     width: 45vw;
@@ -454,3 +467,5 @@ form input {
     color: #fff;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
