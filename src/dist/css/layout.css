@@ -166,8 +166,8 @@ a {
     padding: 10px 0 62px;
   }
   .btn-logout {
-    width: 105px;
-    height: 49px;
+    width: 5rem;
+    height: 5rem;
   }
 }
 @media (min-width: 375px) {
