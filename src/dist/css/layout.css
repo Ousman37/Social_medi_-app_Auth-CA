@@ -23,27 +23,6 @@ a {
   text-decoration: none;
 }
 
-#container-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 0.25rem;
-  margin-bottom: 5rem;
-}
-
-.btn-logout {
-  padding: 5px;
-  border-radius: 7px;
-  width: 120px;
-  height: 35px;
-  font-size: 16px;
-  border: none;
-  background: tomato;
-  color: #ffffff;
-  box-shadow: 4px 4px 5px -3px gray;
-}
-
 .container_log a {
   height: 1em;
   margin-right: 2em;
@@ -76,6 +55,27 @@ a {
   border-bottom: 1px solid #17a2b8;
   width: 100%;
   z-index: 88;
+}
+
+#container-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.25rem;
+  margin-bottom: 5rem;
+}
+
+.btn-logout {
+  padding: 5px;
+  border-radius: 7px;
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  background: tomato;
+  color: #ffffff;
+  box-shadow: 4px 4px 5px -3px gray;
 }
 
 #container-card {
@@ -166,8 +166,8 @@ a {
     padding: 10px 0 62px;
   }
   .btn-logout {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 4rem;
   }
 }
 @media (min-width: 375px) {

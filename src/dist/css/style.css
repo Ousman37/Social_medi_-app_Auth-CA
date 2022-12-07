@@ -360,12 +360,21 @@ form input {
   padding: 1rem;
 }
 
+/*
+.single-page-container {
+    width: 80%;
+    min-width: 310px;
+    margin: auto;
+    padding: 21px;
+
+    box-shadow: 6px 6px 7px -4px grey;
+}*/
 .single-page-container {
   width: 80%;
   min-width: 310px;
   margin: auto;
-  padding: 30px;
-  background-color: lightskyblue;
+  padding: 19px;
+  background-color: rgba(66, 93, 110, 0.4705882353);
   box-shadow: 6px 6px 7px -4px gray;
 }
 
@@ -444,6 +453,23 @@ form input {
   margin-bottom: 5rem;
 }
 
+@media (min-width: 360px) {
+  .single-page-img {
+    width: 45vw;
+    height: 41vw;
+    min-width: 267px;
+    min-height: 265px;
+    margin: auto;
+  }
+  .single-title {
+    text-align: center;
+    margin: auto;
+    padding: 4px;
+    background-color: red;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+}
 @media (min-width: 375px) {
   .single-page-img {
     width: 45vw;

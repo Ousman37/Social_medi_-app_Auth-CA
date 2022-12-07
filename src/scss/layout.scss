@@ -2,28 +2,6 @@
 
 @import 'base';
 
-#container-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  gap: 0.25rem;
-  margin-bottom: 5rem;
-}
-
-.btn-logout {
-  padding: 5px;
-  border-radius: 7px;
-  width: 120px;
-  height: 35px;
-  font-size: 16px;
-  border: none;
-  background: tomato;
-  color: #ffffff;
-  box-shadow: 4px 4px 5px -3px gray;
-}
-
 .container_log a {
   height: 1em;
   margin-right: 2em;
@@ -56,6 +34,28 @@
   border-bottom: 1px solid $primary-color;
   width: 100%;
   z-index: 88;
+}
+
+#container-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  gap: 0.25rem;
+  margin-bottom: 5rem;
+}
+
+.btn-logout {
+  padding: 5px;
+  border-radius: 7px;
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  background: tomato;
+  color: #ffffff;
+  box-shadow: 4px 4px 5px -3px gray;
 }
 
 #container-card {

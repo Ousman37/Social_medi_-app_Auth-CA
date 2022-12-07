@@ -64,6 +64,24 @@ header {
   color: #f4f4f4;
 }
 
+.container_log a {
+  height: 1em;
+  margin-right: 2em;
+  width: 14em;
+  color: #f4f4f4;
+  display: inline-block;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1em;
+  font-weight: bold;
+  margin-left: 0.5em;
+  font-family: "Roboto";
+  font-weight: bold;
+  top: 10rem;
+  text-transform: uppercase;
+  padding: 10px 0 45px;
+}
+
 .dev-container {
   height: -2px;
 }
@@ -197,54 +215,6 @@ label {
     width: 14em;
   }
 }
-@media (min-width: 412px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*position: fixed;*/
-    bottom: 0;
-    width: 100%;
-  }
-  .logo {
-    height: 1em;
-    margin-right: 2em;
-    width: 2em;
-    font-size: 1.3em;
-    text-align: center;
-    line-height: 1em;
-    margin-left: 2.5rem;
-    top: -10rem;
-    margin-bottom: 2rem;
-  }
-  .form-control {
-    width: 323px;
-  }
-  .form-signin {
-    max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: -29rem;
-  }
-  /*
-  .btn,
-  .btn-light,
-  .tag a {
-    font-size: 1rem;
-  }*/
-}
-.btn-primary {
-  background-color: #17a2b8;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}
-
 @media (min-width: 360px) {
   .footer {
     display: flex;
@@ -285,20 +255,18 @@ label {
 .tag a {
     font-size: 1rem;
   }
+  .btn-primary {
+    background-color: #17a2b8;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .helper-text {
+    color: tomato;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
 }
-.btn-primary {
-  background-color: #17a2b8;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}
-
 @media (min-width: 375px) {
   .footer {
     display: flex;
@@ -318,13 +286,10 @@ label {
     width: 291px;
   }
   .form-signin {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: -69rem;
-    height: 100%;
+    margin-bottom: -58rem;
   }
   .form-group {
-    margin-bottom: 0rem;
+    margin-bottom: -1rem;
   }
   .language {
     display: flex;
@@ -342,20 +307,26 @@ label {
 .tag a {
     font-size: 1rem;
   }
+  .btn-primary {
+    background-color: #17a2b8;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .helper-text {
+    color: tomato;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
 }
-.btn-primary {
-  background-color: #17a2b8;
-  width: 100%;
-  margin-bottom: 1rem;
+@media (min-width: 390px) {
+  .form-control {
+    width: 323px;
+  }
+  .form-signin {
+    margin-bottom: -69rem;
+  }
 }
-
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}
-
 @media (min-width: 412px) {
   .form-control {
     width: 323px;
@@ -365,10 +336,13 @@ label {
   .form-control {
     width: 290px;
   }
+  .form-signin {
+    margin-bottom: -66rem;
+  }
 }
 @media (min-width: 540px) {
   .form-control {
-    width: 335px;
+    width: 430px;
   }
   .form-signin {
     width: 100%;
@@ -417,7 +391,7 @@ label {
   .form-signin {
     width: 57%;
     margin: 0 auto;
-    margin-bottom: -50rem;
+    margin-bottom: -65rem;
     height: 100%;
   }
   .language {
@@ -436,21 +410,29 @@ label {
 .tag a {
     font-size: 1rem;
   }
+  .btn-primary {
+    background-color: #17a2b8;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .helper-text {
+    color: tomato;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
 }
-.btn-primary {
-  background-color: #17a2b8;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}
-
 @media (min-width: 820px) {
+  .container_bg {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 0.728rem;
+    margin-bottom: 10rem;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -466,12 +448,13 @@ label {
     margin-bottom: 0rem;
   }
   .form-control {
-    width: 812px;
+    width: 753px;
   }
   .form-signin {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -50rem;
+    margin-bottom: 0px;
+    margin-bottom: -52rem;
     height: 100%;
   }
   .language {
@@ -486,26 +469,7 @@ label {
     border: 1px solid #e6e6e6;
   }
 }
-/*
-.helper-text {
-  color: tomato;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-}*/
-@media (min-width: 820px) {
-  .container_bg {
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    margin-top: 19.7rem;
-    margin-bottom: 10rem;
-  }
-}
-@media (orientation: landscape) and (min-width: 1280px) {
+@media (min-width: 1024px) {
   .account-signup-reg,
 .account-signup {
     max-width: 524px;
@@ -514,8 +478,15 @@ label {
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 10rem;
   }
+  .form-signin {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: -52rem;
+    height: 100%;
+  }
   .form-control {
-    width: 701px;
+    width: 909px;
   }
   .container_bg {
     background-color: #f4f4f4;
@@ -524,7 +495,37 @@ label {
     align-items: center;
     justify-content: center;
     padding: 14rem;
-    margin-top: -0.3rem rem;
+    margin-top: 0.7rem;
+    margin-bottom: 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .form-control {
+    width: 914px;
+  }
+  .form-signin {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: -12rem;
+    height: 100%;
+  }
+  /*.account-signup-reg,
+  .account-signup {
+    max-width: 524px;
+    padding: 15px 115px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+  }*/
+  .container_bg {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14rem;
+    margin-top: 0.78rem;
     margin-bottom: 10rem;
   }
 }
