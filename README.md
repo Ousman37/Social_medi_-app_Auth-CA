@@ -1,1 +1,65 @@
-# Social_medi_-app_Auth-CA
+# Social_medi_-app_Auth-CA 1
+
+## Description 2
+
+<p> Social media application Auth.</p>
+
+###### Built With 6
+
+- HTML
+
+- JavaScript API
+
+- SASS
+
+
+
+
+
+## Getting Started
+
+## Installing
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/Ousman37/Social_medi_-app_Auth-CA.git
+```
+
+2. Install the dependencies:
+
+```
+npm init
+```
+
+```
+npm i -D express 
+```
+
+```
+npm i -D npm-sass
+```
+
+
+```
+npm i -D eslint
+```
+
+```
+npm i -D nodemon
+```
+
+
+
+
+Inserting a link 
+
+[Home]( "netlify.app")
+
+
+## Contact
+[My Github page] https://github.com/Ousman37
+
+[My LinkedIn page] https://www.linkedin.com/in/ethmane-didi-34885844/
+
+[My instagram page] https://www.instagram.com/codewith_ethmane/
