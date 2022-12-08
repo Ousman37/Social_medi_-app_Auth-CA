@@ -16,7 +16,7 @@ html {
 body {
   background-color: #f4f4f4;
   font-size: 1rem;
-  font-family: "Roboto";
+  font-family: "Poppins";
 }
 
 a {
@@ -178,12 +178,12 @@ a {
   .container_log a {
     height: 1em;
     margin-right: 2em;
-    width: 4em;
+    width: -9em;
     color: #f4f4f4;
     display: inline-block;
     font-size: 1.5em;
     text-transform: uppercase;
-    margin-left: 3.5em;
+    margin-left: 0.5em;
     padding: 10px 0 63px;
   }
 }

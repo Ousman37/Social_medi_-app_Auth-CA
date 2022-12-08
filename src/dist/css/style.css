@@ -16,7 +16,7 @@ html {
 body {
   background-color: #f4f4f4;
   font-size: 1rem;
-  font-family: "Roboto";
+  font-family: "Poppins";
 }
 
 a {
@@ -261,26 +261,6 @@ form input {
   color: #17a2b8;
 }
 
-/*
-  .btn,
-  .btn-light,
-  .tag a {
-    font-size: 1rem;
-
-
-  background-color: $pink;
-  color: $light-color;
-  font-size: $font-size-lg;
-  padding: 15px 50px;
-  border-radius: none;
-  width: 100%;
-  margin-bottom: 2rem;
-  transition: all 0.2s ease-in-out;
-  outline: none;
-  :hover {
-    background-color: #dc3545;
-  }
-  }*/
 /*---- language ------*/
 .language {
   display: flex;

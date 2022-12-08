@@ -16,7 +16,7 @@ html {
 body {
   background-color: #f4f4f4;
   font-size: 1rem;
-  font-family: "Roboto";
+  font-family: "Poppins";
 }
 
 a {
@@ -109,17 +109,6 @@ header {
   margin-bottom: -11rem;
 }
 
-/*
-.form-control {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  padding: 2rem;
-  width: 530px;
-  height: 600px;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-}*/
 /*---  Form input ----*/
 .form-control {
   width: 100%;
@@ -241,12 +230,6 @@ label {
     font-size: 1rem;
   }*/
 }
-/*
-.btn-primary {
-  background-color: $primary-color;
-  width: 100%;
-  margin-bottom: 1rem;
-}*/
 .helper-text {
   color: tomato;
   margin-top: 1em;
