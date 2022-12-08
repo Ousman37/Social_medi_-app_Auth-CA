@@ -10,11 +10,11 @@
 
 ### Built With 3
 
-- HTML
+- [x] HTML
 
-- JavaScript API
+- [x] JavaScript API
 
-- SASS
+- [x]  SASS
 
 
 
