@@ -6,7 +6,7 @@
 
 ## Description 2
 
-<p> Social media application ***authorization***.</p>
+ Social media application **authorization** 
 
 ### Built With 3
 
