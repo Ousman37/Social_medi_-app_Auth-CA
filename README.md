@@ -1,12 +1,12 @@
 # Social_media-app_Auth-CA 1
 
-![Social media app authorization.1](https://github.com/Ousman37/Social_medi_-app_Auth-CA/blob/workflow_Js2/Screenshot%202022-12-08%20at%2014.18.03.png)
+![Social media app Auth.1](https://github.com/Ousman37/Social_medi_-app_Auth-CA/blob/workflow_Js2/Screenshot%202022-12-08%20at%2014.18.03.png)
 
 
 
 ## Description 2
 
-<p> Social media application Auth.</p>
+<p> Social media application authorization.</p>
 
 ###### Built With 6
 
