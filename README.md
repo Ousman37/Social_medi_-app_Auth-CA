@@ -8,7 +8,7 @@
 
 <p> Social media application authorization.</p>
 
-###### Built With 6
+### Built With 3
 
 - HTML
 
@@ -20,9 +20,9 @@
 
 
 
-## Getting Started
+#### Getting Started 4
 
-## Installing
+##### Installing 5
 
 1. Clone the repo:
 
@@ -61,7 +61,7 @@ Inserting a link
 [Home]( "netlify.app")
 
 
-## Contact
+##### Contact 6
 [My Github page] https://github.com/Ousman37
 
 [My LinkedIn page] https://www.linkedin.com/in/ethmane-didi-34885844/
