@@ -1,12 +1,13 @@
 @import 'variables';
 
+//@import 'utilities';
 @import 'base';
 
 .container_log a {
   height: 1em;
   margin-right: 2em;
   width: 14em;
-  color: $light-color;
+  color: #fff;
   display: inline-block;
   font-size: 1.5em;
   text-align: center;
@@ -30,7 +31,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: $primary-color;
-  color: $light-color;
+  color: #fff;
   border-bottom: 1px solid $primary-color;
   width: 100%;
   z-index: 88;

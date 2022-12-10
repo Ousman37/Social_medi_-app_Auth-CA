@@ -9,7 +9,7 @@
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Welcome to the | Inbound Media</title>
+
   <title>Inbound Media | Create Post</title>
 
 
@@ -19,55 +19,73 @@
 <body>
 
   <header>
-    <nav class="navbar">
+    <nav class="navbar bg-white">
       <h1>
-        <a href="/" class="logo"><i class="fa-brands fa-facebook"></i>Inbound Media
-        </a>
-      </h1>
+        <a href="#"><i class="fa-brands fa-facebook"></i>Inbound Media</a>
 
+      </h1>
+      <ul>
+        <!--<li> <a href="posts.html">Post</a></li>
+          <li> <a href="edit.html">Edit</a></li>-->
+        <li> <a href="create-post.html">Create Post</a></li>
+        <li> <a href="single-post.html">Single Post</a></li>
+        <li> <a href="register.html">Register</a></li>
+      </ul>
     </nav>
   </header>
+  <!--NAV FINISH-->
 
-  <div class="headline_two">
+  <section class="landing">
+    <div class="dark-overlay">
+      <div class="landing-inner">
+        <h1 class="x-large">Welcome create a posts and share your ideas others!</h1>
+      </div>
+
+      <div class="container_bg">
+
+        <form action="#" class="form-signin">
+          <h2>Create post</h2>
+          <div id="flash"></div>
+          <div class="form-group">
+            <label for="email">Title</label>
+            <input id="title" name="title" required type="text" class="form-control" placeholder="Title" />
+
+
+          </div>
+
+          <div class="form-group">
+            <label for="username">Body</label>
+            <input id="body" name="body" required type="text" class="form-control" title="Must Container 4 Characters"
+              placeholder="Body" />
+
+          </div>
+
+          <div class="form-group">
+            <label for="tags">Tags</label>
+            <input id="tags" name="Tags" required type="text" class="form-control" placeholder="Tags" />
+
+          </div>
+
+          <div class="form-group">
+            <label for="media">Media</label>
+            <input id="media" name="Media" required type="text" class="form-control"
+              placeholder="Enter a image link for Banner" />
+          </div>
+          <button id="create-submit" type="button" class="btn btn-primary">Create Entry</button>
+
+        </form>
+      </div>
+      <!--ACTUALLY A FORM-->
+    </div>
+  </section>
+
+
+  <!-- <div class="headline_two">
     <p class="inner-headline">Welcome create a posts and share your ideas others!</p>
-  </div>
+  </div>-->
 
 
-  <div class="container_bg">
 
-    <form action="#" class="form-signin">
-      <h1>Create post</h1>
-      <div id="flash"></div>
-      <div class="form-group">
-        <label for="email">Title</label>
-        <input id="title" name="title" required type="text" class="form-control" placeholder="Title" />
-
-
-      </div>
-
-      <div class="form-group">
-        <label for="username">Body</label>
-        <input id="body" name="body" required type="text" class="form-control" title="Must Container 4 Characters"
-          placeholder="Body" />
-
-      </div>
-
-      <div class="form-group">
-        <label for="tags">Tags</label>
-        <input id="tags" name="Tags" required type="text" class="form-control" placeholder="Tags" />
-
-      </div>
-
-      <div class="form-group">
-        <label for="media">Media</label>
-        <input id="media" name="Media" required type="text" class="form-control"
-          placeholder="Enter a image link for Banner" />
-      </div>
-      <button id="create-submit" type="button" class="btn btn-primary">Create Entry</button>
-
-    </form>
-  </div>
-  <!--ACTUALLY A FORM-->
 
   <!-- *Footer start -->
   <footer class="footer">

@@ -15,71 +15,84 @@
 
 <body>
   <header>
-    <nav class="navbar">
-      <div class="container_log">
-        <a href="/" class="logo"><i class="fa-brands fa-facebook"></i>Inbound Media</a>
+    <nav class="navbar bg-white">
+      <h1>
+        <a href="#"><i class="fa-brands fa-facebook"></i>Inbound Media</a>
 
-      </div>
-
+      </h1>
+      <ul>
+        <!--<li> <a href="posts.html">Post</a></li>
+            <li> <a href="edit.html">Edit</a></li>-->
+        <li> <a href="create-post.html">Create Post</a></li>
+        <li> <a href="single-post.html">Single Post</a></li>
+        <li> <a href="register.html">Register</a></li>
+      </ul>
     </nav>
-
   </header>
+
+  <!--NAV FINISH-->
+
+  <section class="landing">
+    <div class="dark-overlay">
+      <div class="landing-inner">
+        <h2 class="x-large">Please enter your credentials to register. Don't keep your secrets, share them anonymously!</h2>
+        
+      </div>
+      <div class="container_bg">
+
+        <form action="/register" class="form-signin" method="post">
+          <h1>Register</h1>
+          <div id="flash"></div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" name="email" required type="email"
+              class="form-control" title="Must be a valid email address" placeholder="name@example.com" />
+
+          </div>
+
+          <div class="form-group">
+            <label for="username">Name</label>
+            <input id="username" name="username" required type="text" class="form-control"
+              title="Must Container 4 Characters" placeholder="Enter Your Name" />
+
+          </div>
+
+          <div class="form-group">
+            <label for="avatar">Avatar</label>
+            <input id="avatar" name="avatar" required type="text" class="form-control"
+              placeholder="Enter a image link " />
+
+          </div>
+
+
+          <div class="form-group">
+            <label for="banner">Banner</label>
+            <input id="banner" name="banner" required type="text" class="form-control"
+              placeholder="Enter a image link for Banner" />
+
+          </div>
+
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" pattern="[a-zA-Z0-9]{8,}" class="form-control"
+              required placeholder="password" />
+            <p class="alert alert-danger"> Must be at least 8 characters</p>
+          </div>
+
+          <button type="button" id="register-submit" class="btn_fourth">Register</button>
+
+        </form>
+      </div>
+      <!--ACTUALLY A FORM-->
+
+    </div>
+  </section>
 
   <div class="dev-container"></div>
   <!--NAV FINISH-->
-  <div class="headline_two">
-
-    <p class="inner-headline">Don't keep your secrets, share them anonymously!</p>
-    <p class="lead_two">Please enter your credentials to register </p>
-  </div>
 
 
-  <div class="container_bg">
-
-    <form action="/register" class="form-signin" method="post">
-      <h1>Register</h1>
-      <div id="flash"></div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" name="email" required type="email"
-          class="form-control" title="Must be a valid email address" placeholder="name@example.com" />
-
-      </div>
-
-      <div class="form-group">
-        <label for="username">Name</label>
-        <input id="username"  name="username" required type="text" class="form-control"
-          title="Must Container 4 Characters" placeholder="Enter Your Name" />
-
-      </div>
-
-      <div class="form-group">
-        <label for="avatar">Avatar</label>
-        <input id="avatar" name="avatar" required type="text" class="form-control" placeholder="Enter a image link " />
-
-      </div>
-
-
-      <div class="form-group">
-        <label for="banner">Banner</label>
-        <input id="banner" name="banner" required type="text" class="form-control"
-          placeholder="Enter a image link for Banner" />
-
-      </div>
-
-
-      <div class="form-group">
-        <label for="password" class="form-control">Password</label>
-        <input title=" Must be at least 8 characters" name="password" pattern="[a-zA-Z0-9]{8,}" class="form-control"
-          required type="text" id="password" />
-        <p class="alert alert-danger"> Must be at least 8 characters</p>
-      </div>
-
-      <button type="button" id="register-submit" class="btn_fourth">Register</button>
-
-    </form>
-  </div>
-  <!--ACTUALLY A FORM-->
 
   <!-- *Footer start -->
   <footer class="footer">
