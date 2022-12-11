@@ -14,9 +14,40 @@
 
 
   <script type="module" src="./routes/login.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
 </head>
+
 <body>
-  <div id="loading" class="loading display-none" ></div>
+  <header class="header" id="header">
+    <nav class="navbar nav container bg-white" id="nav">
+
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="posts.html" class="nav-link current">Post</a>
+          </li>
+          <li class="list-item">
+            <a href="create-post.html" class="nav-link">Create Post</a>
+          </li>
+
+          <li class="list-item">
+            <a href="register.html" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
+      </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
+    </nav>
+  </header>
+  <!--NAV FINISH-->
+  <div id="loading" class="loading display-none"></div>
   <section>
     <div class="content">
       <div class="flex-div">
@@ -49,7 +80,7 @@
                 <li class="special">Must contain a number or special character.</li>
               </ul>
               <button type="button" id="login-submit"
-                class="btn btn-primary  w-100 my-3 text-light login">Login</button>
+                class="btn    btn-primary  w-100 my-3 text-light login">Login</button>
 
 
               <a href="#" class="text-decoration-none text-center">

@@ -14,25 +14,40 @@
 
 
   <script defer type="module" src="./routes/create-post.js"></script>
+  <script src="./routes/mobile.js" defer></script>
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar bg-white">
-      <h1>
-        <a href="#"><i class="fa-brands fa-facebook"></i>Inbound Media</a>
+  <header class="header" id="header">
+    <nav class="navbar nav container bg-white" id="nav">
 
-      </h1>
-      <ul>
-        <!--<li> <a href="posts.html">Post</a></li>
-          <li> <a href="edit.html">Edit</a></li>-->
-        <li> <a href="create-post.html">Create Post</a></li>
-        <li> <a href="single-post.html">Single Post</a></li>
-        <li> <a href="register.html">Register</a></li>
-      </ul>
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="posts.html" class="nav-link current">Post</a>
+          </li>
+          <li class="list-item">
+            <a href="create-post.html" class="nav-link">Create Post</a>
+          </li>
+
+          <li class="list-item">
+            <a href="register.html" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
+      </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
     </nav>
   </header>
+  <!--NAV FINISH-->
   <!--NAV FINISH-->
 
   <section class="landing">
@@ -71,7 +86,7 @@
             <input id="media" name="Media" required type="text" class="form-control"
               placeholder="Enter a image link for Banner" />
           </div>
-          <button id="create-submit" type="button" class="btn btn-primary">Create Entry</button>
+          <button id="create-submit" class="btn btn-primary">Create Entry</button>
 
         </form>
       </div>
@@ -80,9 +95,6 @@
   </section>
 
 
-  <!-- <div class="headline_two">
-    <p class="inner-headline">Welcome create a posts and share your ideas others!</p>
-  </div>-->
 
 
 

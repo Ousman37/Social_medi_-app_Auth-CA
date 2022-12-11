@@ -13,18 +13,48 @@
 
 
   <script type="module" src="./routes/singlepost.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
 
 
 </head>
 
 <body>
-  
-  <div class="single-page-container">
-    <h1 id="single-title" class="single-title" ></h1>
-    <div class="single-page-img">
-    <img id="single-img" class="card-img-top" src='' alt="Image is to be here" height="100%"
-      width="100%">
+  <header class="header" id="header">
+    <nav class="navbar nav container bg-white" id="nav">
+
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="posts.html" class="nav-link current">Post</a>
+          </li>
+          <li class="list-item">
+            <a href="create-post.html" class="nav-link">Create Post</a>
+          </li>
+
+          <li class="list-item">
+            <a href="register.html" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
       </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
+    </nav>
+  </header>
+  <!--NAV FINISH-->
+
+  <div class="single-page-container">
+    <h1 id="single-title" class="single-title"></h1>
+    <div class="single-page-img">
+      <img id="single-img" class="card-img-top" src='' alt="Image is to be here" height="100%" width="100%">
+    </div>
 
     <div class="card-body">
       <p id="single-body" class=""></p>

@@ -1,5 +1,5 @@
 $primary-color: #17a2b8;
-$secondary-color: #afcfd4;
+$secondary-color: #f1f0f0;
 $dark-color: #343a40;
 $black-col: #555555;
 $light-grey-col: #e7e7e7;
@@ -45,16 +45,4 @@ $border-radius-lg: 0.1rem;
 $font-family: 'Raleway';
 $max-width: 1100px;
 
-// // Set text color based on background
-// @function set-text-color($color) {
-//   @if (lightness($color) > 50) {
-//     @return #333;
-//   } @else {
-//     @return #fff;
-//   }
-// }
-// // Set background & text color
-// @mixin set-background-color($color) {
-//   background-color: $color;
-//   color: set-text-color($color);
-// }
+$section-spacing: 4rem 0 2.5rem;
