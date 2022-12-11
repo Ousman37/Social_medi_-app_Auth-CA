@@ -224,24 +224,6 @@ header {
   margin-bottom: 1rem;
 }
 
-h1 {
-  height: 1em;
-  margin-right: 2em;
-  width: 14em;
-  display: inline-block;
-  font-size: 1.5em;
-  text-align: center;
-  line-height: 1em;
-  font-weight: bold;
-  margin-left: 0.5em;
-  font-family: "Raleway";
-  font-weight: bold;
-  top: -10rem;
-  text-transform: uppercase;
-  padding: 10px 0 45px;
-  margin-bottom: 1rem;
-}
-
 .fa-facebook {
   color: #d63384;
 }

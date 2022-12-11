@@ -200,7 +200,7 @@ header {
 }
 .landing-inner {
   color: #333;
-  height: 24%;
+  height: 35%;
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -323,44 +323,55 @@ header {
 /*----- media q ----- */
 @media screen and (min-width: 280px) {
   .menu-toggle-icon {
-    width: 14.5rem;
-    font-size: 1.25rem;
+    font-size: 2.3rem;
+  }
+  .landing-inner {
+    color: #333;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 360px) {
   .menu-toggle-icon {
     width: 14.5rem;
-    font-size: 1.25rem;
+    font-size: 2.3rem;
+    margin-right: -5rem;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 375px) {
   .menu-toggle-icon {
     width: 14.5rem;
-    font-size: 1.25rem;
+    font-size: 2.3rem;
+    margin-right: -5rem;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 412px) {
   .menu-toggle-icon {
     width: 14.5rem;
-    font-size: 1.25rem;
+    font-size: 2.3rem;
+    margin-right: -5rem;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 768px) {
   .menu-toggle-icon {
     width: 14.5rem;
-    font-size: 1.25rem;
+    font-size: 2.3rem;
+    margin-right: -5rem;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 800px) {
   .menu-toggle-icon {
     width: 14.5rem;
-    font-size: 1.25rem;
+    font-size: 2.3rem;
+    margin-right: -5rem;
   }
 }
-@media screen and (min-width: 280px) and (min-width: 991px) and (min-width: 991px) {
-  :root {
-    --font-size-xl: 7.5rem;
-  }
+@media screen and (min-width: 280px) and (min-width: 912px) {
   .nav-mobile {
     background-color: transparent;
     position: initial;
@@ -401,7 +412,89 @@ header {
     display: none;
   }
 }
-@media screen and (min-width: 280px) and (min-width: 991px) and (min-width: 375px) {
+@media screen and (min-width: 280px) and (min-width: 912px) and (min-width: 991px) {
+  .nav-mobile {
+    background-color: transparent;
+    position: initial;
+    width: initial;
+    padding: initial;
+    z-index: initial;
+    transform: initial;
+    transition: initial;
+  }
+  .nav-mobile,
+.list {
+    flex-direction: row;
+    gap: 0;
+  }
+  .nav-link {
+    display: block;
+    font-weight: lighter;
+    padding: 5rem 2.4rem;
+  }
+  .list-link::after,
+.list-link.current::before {
+    top: initial;
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+  }
+  .sm-screen-hidden {
+    display: block !important;
+  }
+  .lg-screen-hidden {
+    display: none;
+  }
+  .nav.active .nav-mobile {
+    transform: initial;
+  }
+  .header::before {
+    display: none;
+  }
+}
+@media screen and (min-width: 280px) and (min-width: 912px) and (min-width: 1024px) {
+  .nav-mobile {
+    background-color: transparent;
+    position: initial;
+    width: initial;
+    padding: initial;
+    z-index: initial;
+    transform: initial;
+    transition: initial;
+  }
+  .nav-mobile,
+.list {
+    flex-direction: row;
+    gap: 0;
+  }
+  .nav-link {
+    display: block;
+    font-weight: lighter;
+    padding: 5rem 2.4rem;
+  }
+  .list-link::after,
+.list-link.current::before {
+    top: initial;
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+  }
+  .sm-screen-hidden {
+    display: block !important;
+  }
+  .lg-screen-hidden {
+    display: none;
+  }
+  .nav.active .nav-mobile {
+    transform: initial;
+  }
+  .header::before {
+    display: none;
+  }
+}
+@media screen and (min-width: 280px) and (min-width: 912px) and (min-width: 375px) {
   .menu-toggle-icon {
     width: 14.5rem;
     font-size: 1.25rem;
