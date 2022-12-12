@@ -39,13 +39,13 @@ img {
   padding: 4rem 0 2.5rem;
 }
 
-/*
 .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}*/
+}
+
 .flex-div {
   display: flex;
   justify-content: space-evenly;
@@ -119,10 +119,9 @@ form {
   color: #1877f2;
 }
 
-.account-signup-reg,
 .account-signup {
-  max-width: 524px;
-  padding: 15px 64px;
+  width: 298px;
+  padding: 6px 25px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.1);
   margin-bottom: 10rem;
@@ -186,16 +185,13 @@ form {
   width: 100%;
 }
 
-.account-signup-reg,
+/*
 .account-signup {
-  max-width: 524px;
-  padding: 15px 80px;
-  padding: 15px 60px;
+
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.1);
   margin-bottom: 10rem;
-}
-
+}*/
 .text-center {
   margin-top: -1rem;
 }
@@ -227,7 +223,7 @@ form {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 500px) {
+@media screen and (min-width: 360px) {
   html {
     font-size: 60%;
   }
@@ -256,8 +252,46 @@ form {
     display: flex;
     flex-direction: column;
   }
+  .account-signup {
+    width: 254px;
+    padding: 6px 25px;
+  }
 }
-@media (orientation: landscape) and (max-height: 500px) {
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  #form {
+    width: 259px;
+    height: fit-content;
+  }
+  #form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form .login {
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  #form .create-account {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 254px;
+    padding: 6px 25px;
+  }
+}
+@media screen and (min-width: 540px) {
   .header {
     height: 90vmax;
   }
@@ -267,8 +301,12 @@ form {
     left: 47%;
     transform: translate(-50%, -50%);
   }
+  .account-signup {
+    width: 254px;
+    padding: 6px 25px;
+  }
 }
-@media (min-width: 501px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 60%;
   }
@@ -298,27 +336,25 @@ form {
     flex-direction: column;
   }
 }
-@media (orientation: landscape) and (min-width: 800px) {
-  .account-signup-reg,
-.account-signup {
-    max-width: 524px;
-    padding: 15px 70px;
+@media screen and (min-width: 800px) {
+  .account-signup {
+    width: 298px;
+    padding: 6px 25px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 10rem;
   }
 }
-@media (orientation: landscape) and (min-width: 810px) {
-  .account-signup-reg,
-.account-signup {
-    max-width: 524px;
-    padding: 15px 80px;
+@media screen and (min-width: 820px) {
+  .account-signup {
+    width: 298px;
+    padding: 6px 25px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 10rem;
   }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
   html {
     font-size: 60%;
   }
@@ -348,35 +384,13 @@ form {
     flex-direction: column;
   }
 }
-@media (orientation: landscape) and (min-width: 1217px) {
-  .account-signup-reg,
-.account-signup {
-    max-width: 524px;
-    padding: 15px 64px;
+@media screen and (min-width: 1280px) {
+  .account-signup {
+    width: 298px;
+    padding: 6px 25px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 10rem;
-  }
-}
-@media (orientation: landscape) and (min-width: 1280px) {
-  .account-signup-reg,
-.account-signup {
-    max-width: 524px;
-    padding: 15px 115px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 10rem;
-  }
-}
-@media (orientation: landscape) and (max-height: 500px) {
-  .header {
-    height: 90vmax;
-  }
-  .content {
-    position: absolute;
-    top: 51%;
-    left: 47%;
-    transform: translate(-50%, -50%);
   }
 }
 
