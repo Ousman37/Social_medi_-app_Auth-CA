@@ -196,208 +196,207 @@ form {
   #form .login {
     font-size: 1.5rem;
   }
-}
+  @media screen and (min-width: 360px) {
+    html {
+      font-size: 60%;
+    }
 
-@media screen and (min-width: 360px) {
-  html {
-    font-size: 60%;
-  }
+    .name-content {
+      margin: 0;
+      text-align: center;
+    }
 
-  .name-content {
-    margin: 0;
-    text-align: center;
-  }
+    #form {
+      width: 259px;
+      height: fit-content;
+    }
 
-  #form {
-    width: 259px;
-    height: fit-content;
-  }
+    #form input {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
 
-  #form input {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
+    #form .login {
+      font-size: 1.5rem;
+    }
 
-  #form .login {
-    font-size: 1.5rem;
-  }
+    #form a {
+      font-size: 1.5rem;
+    }
 
-  #form a {
-    font-size: 1.5rem;
-  }
+    #form .create-account {
+      font-size: 1.5rem;
+    }
 
-  #form .create-account {
-    font-size: 1.5rem;
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+    }
+    .account-signup {
+      width: 254px;
+      padding: 6px 25px;
+    }
   }
+  @media screen and (min-width: 412px) {
+    html {
+      font-size: 60%;
+    }
 
-  .flex-div {
-    display: flex;
-    flex-direction: column;
-  }
-  .account-signup {
-    width: 254px;
-    padding: 6px 25px;
-  }
-}
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 60%;
-  }
+    .name-content {
+      margin: 0;
+      text-align: center;
+    }
 
-  .name-content {
-    margin: 0;
-    text-align: center;
-  }
+    #form {
+      width: 259px;
+      height: fit-content;
+    }
 
-  #form {
-    width: 259px;
-    height: fit-content;
-  }
+    #form input {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
 
-  #form input {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
+    #form .login {
+      font-size: 1.5rem;
+    }
 
-  #form .login {
-    font-size: 1.5rem;
-  }
+    #form a {
+      font-size: 1.5rem;
+    }
 
-  #form a {
-    font-size: 1.5rem;
-  }
+    #form .create-account {
+      font-size: 1.5rem;
+    }
 
-  #form .create-account {
-    font-size: 1.5rem;
-  }
-
-  .flex-div {
-    display: flex;
-    flex-direction: column;
-  }
-  .account-signup {
-    width: 254px;
-    padding: 6px 25px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .header {
-    height: 90vmax;
-  }
-  .content {
-    position: absolute;
-    top: 51%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-  }
-  .account-signup {
-    width: 254px;
-    padding: 6px 25px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 60%;
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+    }
+    .account-signup {
+      width: 254px;
+      padding: 6px 25px;
+    }
   }
 
-  .name-content {
-    margin: 0;
-    text-align: center;
+  @media screen and (min-width: 540px) {
+    .header {
+      height: 90vmax;
+    }
+    .content {
+      position: absolute;
+      top: 51%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+    }
+    .account-signup {
+      width: 254px;
+      padding: 6px 25px;
+    }
   }
 
-  #form {
-    width: 300px;
-    height: fit-content;
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 60%;
+    }
+
+    .name-content {
+      margin: 0;
+      text-align: center;
+    }
+
+    #form {
+      width: 300px;
+      height: fit-content;
+    }
+
+    #form input {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    #form .login {
+      font-size: 1.5rem;
+    }
+
+    #form a {
+      font-size: 1.5rem;
+    }
+
+    #form .create-account {
+      font-size: 1.5rem;
+    }
+
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  #form input {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+  @media screen and (min-width: 800px) {
+    .account-signup {
+      width: 298px;
+      padding: 6px 25px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 10rem;
+    }
   }
 
-  #form .login {
-    font-size: 1.5rem;
+  @media screen and (min-width: 820px) {
+    .account-signup {
+      width: 298px;
+      padding: 6px 25px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 10rem;
+    }
   }
 
-  #form a {
-    font-size: 1.5rem;
-  }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 60%;
+    }
 
-  #form .create-account {
-    font-size: 1.5rem;
-  }
+    .name-content {
+      margin: 0;
+      text-align: center;
+    }
 
-  .flex-div {
-    display: flex;
-    flex-direction: column;
-  }
-}
+    #form {
+      width: 300px;
+      height: fit-content;
+    }
 
-@media screen and (min-width: 800px) {
-  .account-signup {
-    width: 298px;
-    padding: 6px 25px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 10rem;
-  }
-}
+    #form input {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
 
-@media screen and (min-width: 820px) {
-  .account-signup {
-    width: 298px;
-    padding: 6px 25px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 10rem;
-  }
-}
+    #form .login {
+      font-size: 1.5rem;
+    }
 
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 60%;
-  }
+    #form a {
+      font-size: 1.5rem;
+    }
 
-  .name-content {
-    margin: 0;
-    text-align: center;
-  }
+    #form .create-account {
+      font-size: 1.5rem;
+    }
 
-  #form {
-    width: 300px;
-    height: fit-content;
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+    }
   }
-
-  #form input {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-
-  #form .login {
-    font-size: 1.5rem;
-  }
-
-  #form a {
-    font-size: 1.5rem;
-  }
-
-  #form .create-account {
-    font-size: 1.5rem;
-  }
-
-  .flex-div {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .account-signup {
-    width: 298px;
-    padding: 6px 25px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 10rem;
+  @media screen and (min-width: 1280px) {
+    .account-signup {
+      width: 298px;
+      padding: 6px 25px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 10rem;
+    }
   }
 }
