@@ -18,37 +18,10 @@
 </head>
 
 <body>
-  <header class="header" id="header">
-    <nav class="navbar nav container bg-white" id="nav">
 
-      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
-      <div class="nav-mobile" id="menu">
-        <ul class="list">
-          <li class="list-item">
-            <a href="posts.html" class="nav-link current">Post</a>
-          </li>
-          <li class="list-item">
-            <a href="create-post.html" class="nav-link">Create Post</a>
-          </li>
-
-          <li class="list-item">
-            <a href="register.html" class="nav-link">Register</a>
-          </li>
-
-          <button class="btn btn-logout" id="btn-logout">Log Out
-            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
-
-        </ul>
-      </div>
-      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
-        <i class="fa-solid fa-bars open-menu"></i>
-        <i class="fa-regular fa-x menu-close"></i>
-      </div>
-    </nav>
-  </header>
   <!--NAV FINISH-->
   <div id="loading" class="loading display-none"></div>
-  <section>
+  <section class="container">
     <div class="content">
       <div class="flex-div">
         <div class="name-content">
@@ -61,27 +34,24 @@
           <form class="form-signin" id="form">
             <div class="form-group">
               <label for="email">Email</label>
-              <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" required type="email"
-                class="form-control" title="Must be a valid email address" placeholder="name@example.com" />
+              <input type="email" name="email" pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email"
+                 class="form-control" title="Must be a valid email address" placeholder="name@example.com" required/>
 
             </div>
 
             <div class="form-group">
-
               <label for="password"> Password</label>
-
-              <input title=" Must be at least 8 characters" pattern="[a-zA-Z0-9]{8,}" class="form-control login"
+              <input title="password" pattern="[a-zA-Z0-9]{8,}" class="form-control login"
                 type="text" id="password" name="password" placeholder="qwerldskfjls23" required />
-
+            </div>
               <ul class="helper-text">
                 <li class="length">Must be at least 8 characters long.</li>
                 <li class="lowercase">Must contain a lowercase letter.</li>
                 <li class="uppercase">Must contain an uppercase letter.</li>
                 <li class="special">Must contain a number or special character.</li>
               </ul>
-              <button id="login-submit"
-                class="btn btn-primary  w-100 my-3 text-light login">Login</button>
-
+              <!--<button type="submit" id="login-submit" class="btn btn-primary  w-100 my-3 text-light login">Login</button>-->
+              <button class="btn btn-primary login">Login</button>
 
               <a href="#" class="text-decoration-none text-center">
                 <p>Forgotten password?</p>

@@ -55,37 +55,38 @@
 
       <div class="container_bg">
 
-        <form action="#" class="form-signin">
+        <form action="#" class="form-signin" id="editForm">
           <button type="edit" class="btn-edit"> Edit Post</button>
 
           <div id="flash"></div>
           <div class="form-group">
             <label for="email">Title</label>
-            <input id="title" name="title" required type="text" class="form-control" placeholder="Title" />
-
+            <input id="title" name="title" type="text" pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}"
+              class="form-control" placeholder="Title" required />
 
           </div>
 
+
           <div class="form-group">
             <label for="username">Body</label>
-            <input id="body" name="body" required type="text" class="form-control" title="Must Container 4 Characters"
-              placeholder="Body" />
+            <input id="body" name="body" type="text" class="form-control" title="Must Container 4 Characters"
+              placeholder="Body" required />
 
           </div>
 
           <div class="form-group">
             <label for="tags">Tags</label>
-            <input id="tags" name="Tags" required type="text" class="form-control" placeholder="Tags" />
+            <input id="tags" name="Tags" type="text" class="form-control" placeholder="Tags" required />
 
           </div>
 
           <div class="form-group">
             <label for="media">Media</label>
-            <input id="media" name="Media" required type="text" class="form-control"
-              placeholder="Enter a image link for Banner" />
+            <input id="media" name="Media" type="text" class="form-control" placeholder="Enter a image link for Banner"
+              required />
 
           </div>
-          <button id="edit-submit" class="btn btn-primary">Save</button>
+          <button class="btn btn-primary">Save</button>
         </form>
       </div>
       <!--ACTUALLY A FORM-->
