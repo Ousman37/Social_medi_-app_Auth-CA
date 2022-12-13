@@ -210,7 +210,7 @@ header {
 }
 
 .fa-facebook {
-  color: $pink;
+  color: $cyan;
 }
 
 .container_bg {
@@ -294,8 +294,8 @@ label {
   }
 }
 
-.alert-danger {
-  color: $danger-color;
+.helper-text {
+  color: $helper;
   margin-top: 2em;
 }
 
@@ -324,7 +324,7 @@ label {
 @media screen and (min-width: 280px) {
   .menu-toggle-icon {
     /*width: 14.5rem;*/
-  
+
     font-size: 2.3rem;
   }
   .form-control {
@@ -657,7 +657,6 @@ label {
     }
 
     .x-large {
-      
       font-size: 1.3rem;
       line-height: 1.2;
       margin-bottom: -8rem;
