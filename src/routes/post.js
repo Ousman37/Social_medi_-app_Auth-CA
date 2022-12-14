@@ -34,20 +34,23 @@ let postGet = async () => {
         </p>
       </div>
       <div>
-      <a href="/single-post/${post.id}">View This</a>
-      <a href="/update/${post.id}">Update</a>
-      <a class="button" style="display: inline-block;
-  font-weight: 300;
-  color: #fff;
-  cursor: pointer;
-  // font-size: 1.2em;
-  text-decoration: none;
-  border: 1px solid lighten($teal, 10%);
-  padding: 0.5em;
-  border-radius: 4px;
-  background-color: darken($teal, 15%);
-  margin: 2em 15px 0 15px;
-  position: relative;
+      <a class="button"style="display: inline-block;background: #fff transparent;
+  border: 1px solid #10f2e7;color: black;
+  padding: 6px 10px;text-align: center;text-decoration: none;display: inline-block;
+  font-size: 1.2rem;margin: 43px 2px;cursor: pointer; font-weight: bold;
+      font-size: 10px;
+  transition: all 0.3s linear; href="/single-post/${post.id}">View This</a>
+    <a class="button"style="display: inline-block;
+      background: #ff0081; transparent;border: none;color: #fff; font-weight: bold;
+      font-size: 10px; 
+  padding: 6px 10px;text-align: center;text-decoration: none;
+  display: inline-block;font-size: 1.2rem;margin: 43px 2px;
+  cursor: pointer; href="/update/${post.id}">Update</a>
+<a class="button"style="display: inline-block;
+   background: #fff transparent;border: 1px solid red;color: red;font-weight: bold;
+      font-size: 10px;padding: 6px 10px;
+  text-align: center;text-decoration: none;display: inline-block;
+  font-size: 1.2rem;margin: 43px 2px;cursor: pointer;
   transition: all 0.3s linear;" onclick="deletePost(${post.id})">Delete</a>
       </div>
     </div>`;

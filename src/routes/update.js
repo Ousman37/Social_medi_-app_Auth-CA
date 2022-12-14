@@ -36,9 +36,12 @@ function updatePost() {
     fetchUpdate(`${updAndDelPostUrl}/${id}`, postData).then(respData => {
         console.log(respData);
         if (respData.errors) {
-            document.getElementById('flash').innerHTML = `<span style="color:tomato">${respData.errors[0].message}</span>`;
+            document.getElementById(
+                'flash'
+            ).innerHTML = `<span style="color:tomato">${respData.errors[0].message}</span>`;
         } else {
-            document.getElementById('flash').innerHTML ='<span style="color:green;font-size:16px">Post Updated Successfully!</span>';
+            document.getElementById('flash').innerHTML =
+        '<span style="color:green;font-size:16px">Post Updated Successfully!</span>';
         }
     });
 }
