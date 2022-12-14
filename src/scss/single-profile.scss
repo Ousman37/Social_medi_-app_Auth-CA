@@ -170,6 +170,31 @@ header {
 }
 
 /*!logout button*/
+#unfollow {
+  background-color: $follow;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 43px 2px;
+  cursor: pointer;
+}
+
+#follow {
+  background-color: $dark-color;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 43px 2px;
+  cursor: pointer;
+}
 
 .btn-logout {
   background-color: $cyan;
