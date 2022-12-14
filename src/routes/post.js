@@ -35,7 +35,20 @@ let postGet = async () => {
       </div>
       <div>
       <a href="/single-post/${post.id}">View This</a>
-      <a onclick="deletePost(${post.id})">Delete</a>
+      <a href="/update/${post.id}">Update</a>
+      <a class="button" style="display: inline-block;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  // font-size: 1.2em;
+  text-decoration: none;
+  border: 1px solid lighten($teal, 10%);
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: darken($teal, 15%);
+  margin: 2em 15px 0 15px;
+  position: relative;
+  transition: all 0.3s linear;" onclick="deletePost(${post.id})">Delete</a>
       </div>
     </div>`;
         });
@@ -85,21 +98,26 @@ function deletePost(id) {
             });
     }
 }
-// User search the post content feed ====*// 
+// User search the post content feed ====*//
 document.getElementById('search_input').addEventListener('keyup', () => {
     let inpVal = document.getElementById('search_input').value.toUpperCase();
     const postContainer = document.getElementById('container-card');
     const itemArray = postContainer.getElementsByClassName('container-item');
     for (let i = 0; i < itemArray.length; i++) {
         let presentItem = itemArray[i];
-        let presentTitle = presentItem.getElementsByClassName('item-title')[0]
+        let presentTitle = presentItem
+            .getElementsByClassName('item-title')[0]
             .innerText.toUpperCase();
-        let presentBody = presentItem.getElementsByClassName('item-body')[0]
+        let presentBody = presentItem
+            .getElementsByClassName('item-body')[0]
             .innerText.toUpperCase();
-        if (presentBody.indexOf(inpVal) !== -1 || presentTitle.indexOf(inpVal) !== -1) {
+        if (
+            presentBody.indexOf(inpVal) !== -1 ||
+      presentTitle.indexOf(inpVal) !== -1
+        ) {
             itemArray[i].style.display = 'block';
         } else {
-            itemArray[i].style.display ='none';
+            itemArray[i].style.display = 'none';
         }
     }
 });

@@ -10,7 +10,7 @@ let postGet = async () => {
             document.getElementById('flash').innerHTML = `<span style="color:tomato">${data.errors[0].message}</span>`;
         } else {
             document.getElementById('single-title').innerText = data.title;
-            document.getElementById('single-img').src = data.media;
+            document.getElementById('round-img').src = data.media;
             document.getElementById('single-body').innerText = data.body; 
             
         }

@@ -8,6 +8,8 @@ const getSinglePostUrl = `${baseUrl}/social/posts`; //id required after that /:i
 const createPostUrl = `${baseUrl}/social/posts`;
 const updAndDelPostUrl = `${baseUrl}/social/posts`; // id required after that /:id
 
+const profileBaseUrl = `${baseUrl}/social/profiles`;
+
 export {
     registerUrl,
     loginUrl,
@@ -15,4 +17,5 @@ export {
     getSinglePostUrl,
     createPostUrl,
     updAndDelPostUrl,
+    profileBaseUrl
 };

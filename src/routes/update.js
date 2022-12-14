@@ -1,4 +1,4 @@
-import { getSinglePostUrl, updAndDelPostUrl } from './url.js.js';
+import { getSinglePostUrl, updAndDelPostUrl } from './url.js';
 import { fetchGet, fetchUpdate } from './api.js';
 
 let url = window.location.href;
@@ -21,7 +21,7 @@ function fillPost() {
 }
 fillPost();
 
-function editPost() {
+function updatePost() {
     let title = document.getElementById('title').value;
     let body = document.getElementById('body').value;
     let tags = document.getElementById('tags').value;
@@ -36,18 +36,11 @@ function editPost() {
     fetchUpdate(`${updAndDelPostUrl}/${id}`, postData).then(respData => {
         console.log(respData);
         if (respData.errors) {
-            document.getElementById(
-                'flash'
-            ).innerHTML = `<span style="color:tomato">${respData.errors[0].message}</span>`;
+            document.getElementById('flash').innerHTML = `<span style="color:tomato">${respData.errors[0].message}</span>`;
         } else {
-            document.getElementById('flash').innerHTML =
-        '<span style="color:green;font-size:16px"></span>Post Edited Successfully!</span>';
-            document.getElementById('title').value = '';
-            document.getElementById('body').value = '';
-            document.getElementById('tags').value = '';
-            document.getElementById('media').value = '';
+            document.getElementById('flash').innerHTML ='<span style="color:green;font-size:16px">Post Updated Successfully!</span>';
         }
     });
 }
 
-document.getElementById('edit-submit').addEventListener('click', editPost);
+document.getElementById('updateForm').addEventListener('submit', updatePost);

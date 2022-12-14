@@ -21,16 +21,28 @@
 
 <body>
   <header class="header" id="header">
-    <nav class="navbar nav container bg-white" id="nav">
+    <nav class="navbar nav  bg-white" id="nav">
 
       <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
-      <!--<div class="nav-mobile" id="menu">
+      <div class="nav-mobile" id="menu">
         <ul class="list">
           <li class="list-item">
-            <a href="posts.html" class="nav-link current">Post</a>
+            <a href="profile.html" class="nav-link">profiles</a>
+          </li>
+          <li class="list-item">
+            <a href="single-profile.html" class="nav-link">Single Profile</a>
+          </li>
+          <li class="list-item">
+            <a href="posts.html" class="nav-link current">Posts</a>
+          </li>
+          <li class="list-item">
+            <a href="single-post.html" class="nav-link current">Single Post</a>
           </li>
           <li class="list-item">
             <a href="create-post.html" class="nav-link">Create Post</a>
+          </li>
+          <li class="list-item">
+            <a href="update.html" class="nav-link">Update Post</a>
           </li>
 
           <li class="list-item">
@@ -45,24 +57,54 @@
       <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
         <i class="fa-solid fa-bars open-menu"></i>
         <i class="fa-regular fa-x menu-close"></i>
-      </div>-->
+      </div>
     </nav>
   </header>
   <!--NAV FINISH-->
   <section class="container">
-    <div class="container single-page-container">
-      <h1 id="single-title" class="single-title"></h1>
-      <div class="single-page-img">
-        <img id="single-img" class="card-img-top" src='' alt="Image is to be here" height="100%" width="100%">
+    <div class="single-page-container">
+      <a href="/" class="button">Go To Home</a>
+      <div class="round-img" id="profile-container">
+        <img id="round-img" class="card-img-top" src='' alt="Image is to be here">
+
+        <div class="card-body">
+          <h1 id="single-title" class="single-title"></h1>
+          <p id="single-body" class=""></p>
+
+        </div>
       </div>
 
-      <div class="card-body">
-        <p id="single-body" class=""></p>
-        <a href="/" class="button">Go To Home</a>
+    </div>
+  </section>
+  <!-- * Footer start -->
+  <footer class="bg-white p-4 text-muted">
+    <div class="footer_container">
+      <!-- !language choice -->
+      <div class="language">
+        <p class="">English (US)</p>
+        <p class="">Norwegian Arabic</p>
+        <p class="">, French, Portuguese, </p>
+        <p class="">Spanish, Chinese,</p>
+        <p class="">Russian</p>
+      </div>
+      <hr />
+      <!-- actions -->
+      <div class="language">
+        <p class="">Sign Up</p>
+        <p class="">Login</p>
+        <p class="">Messenger</p>
+        <p class="">Inbound Media Lite</p>
+        <p class="">Watch</p>
+      </div>
+      <!-- !copy -->
+      <div class="">
+        <p class="fs-7">Inbound Media &copy; 2022</p>
       </div>
     </div>
+  </footer>
 
-  </section>
+  <!-- *Footer ends here -->
+
 </body>
 
 </html>

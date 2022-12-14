@@ -5,35 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="./dist/css/layout.css">
-
+  <link rel="stylesheet" type="text/css" href="./dist/css/single-profile.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Inbound Media | Post</title>
+  <title>Inbound Media | Single Profile</title>
 
-  <script src="./routes/post.js" defer></script>
+
+  <script type="module" src="./routes/singleprofile.js" defer></script>
   <script src="./routes/mobile.js" defer></script>
+
 
 
 </head>
 
 <body>
   <header class="header" id="header">
-    <nav class="navbar nav container bg-white" id="nav">
+    <nav class="navbar nav  bg-white" id="nav">
 
       <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
       <div class="nav-mobile" id="menu">
         <ul class="list">
           <li class="list-item">
-            <a href="profile.html" class="nav-link">Profiles</a>
+            <a href="profile.html" class="nav-link">profiles</a>
           </li>
           <li class="list-item">
             <a href="single-profile.html" class="nav-link">Single Profile</a>
           </li>
           <li class="list-item">
-            <a href="posts.html" class="nav-link current">Posts</a>
+            <a href="posts.html" class="nav-link current">Post</a>
           </li>
           <li class="list-item">
             <a href="single-post.html" class="nav-link current">Single Post</a>
@@ -61,34 +61,26 @@
     </nav>
   </header>
   <!--NAV FINISH-->
-
-  <section class="landing">
-    <div class="dark-overlay">
-      <div class="landing-inner">
-        <!--<h2 class="x-large">Here are our amazing posts from all over the world</h2>-->
-        <div class="search-container sm-hidden">
-          <form action="/action_page.php">
-            <input type="text" id="search_input" placeholder="Search here.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-
+  <section class="container">
+    <div class="single-page-container">
+      <a href="profile.html" class="button">Go To Profiles</a>
+      <div class="round-img" id="profile-container">
+        <img id="round-img" class="round-img" src='' alt="Image is to be here">
+        <h1 id="single-title" class="single-title"></h1>
       </div>
 
-
-      <div class="container_colum">
-        <div id="flash" class="flash-section"></div>
-        <div id="container-card"></div>
+      <div class="card-body">
+        <h3>Followers</h3>
+        <p id="followers" class=""></p>
       </div>
+      <div>
+        <h3>Following</h3>
+        <p id="following"></p>
 
+      </div>
     </div>
+
   </section>
-
-
-
-  <!--<div style="height: 80px"></div>-->
-
-
 </body>
 
 </html>

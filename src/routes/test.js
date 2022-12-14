@@ -18,11 +18,8 @@ document
                 // get the values of the input fields
                 // eslint-disable-next-line no-unused-vars
                 var title = document.getElementById('title').value;
-
                 var body = document.getElementById('body').value;
-                // eslint-disable-next-line no-unused-vars
                 var tags = document.getElementById('tags').value;
-                // eslint-disable-next-line no-unused-vars
                 var media = document.getElementById('media').value;
             }
         });
@@ -32,7 +29,7 @@ document
             title.length === 0 ||
       body.length === 0 ||
       tags.length === 0 ||
-      media.length === 0
+      media.length === 0 
         ) {
             // show an error message if the input is invalid
             document.getElementById('flash').innerHTML = 'Please fill in all fields';

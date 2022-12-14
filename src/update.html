@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./dist/css/edit.css">
+  <link rel="stylesheet" type="text/css" href="./dist/css/update.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
 
-  <title>Inbound Media | Edit Post</title>
-  <script defer type="module" src="./routes/edit-post.js"></script>
+  <title>Inbound Media | update Post</title>
+  <script defer type="module" src="./routes/update.js"></script>
   <script src="./routes/mobile.js" defer></script>
 </head>
 
@@ -24,10 +24,22 @@
       <div class="nav-mobile" id="menu">
         <ul class="list">
           <li class="list-item">
-            <a href="posts.html" class="nav-link current">Post</a>
+            <a href="profile.html" class="nav-link">Profiles</a>
+          </li>
+          <li class="list-item">
+            <a href="single-profile.html" class="nav-link">Single Profile</a>
+          </li>
+          <li class="list-item">
+            <a href="posts.html" class="nav-link current">Posts</a>
+          </li>
+          <li class="list-item">
+            <a href="single-post.html" class="nav-link current">Single Post</a>
           </li>
           <li class="list-item">
             <a href="create-post.html" class="nav-link">Create Post</a>
+          </li>
+          <li class="list-item">
+            <a href="update.html" class="nav-link">Update Post</a>
           </li>
 
           <li class="list-item">
@@ -50,19 +62,18 @@
   <section class="landing">
     <div class="dark-overlay">
       <div class="landing-inner">
-        <h2 class="x-large">Welcome create a posts and share your ideas others!</h2>
+        <h2 class="x-large">Welcome here you update your posts and share your ideas others!</h2>
       </div>
 
       <div class="container_bg">
 
-        <form action="#" class="form-signin" id="editForm">
-          <button type="edit" class="btn-edit"> Edit Post</button>
+        <form action="#" class="form-signin" id="updateForm">
+          <h3>Update Post</h3>
 
           <div id="flash"></div>
           <div class="form-group">
             <label for="email">Title</label>
-            <input id="title" name="title" type="text" pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}"
-              class="form-control" placeholder="Title" required />
+            <input id="title" name="title" type="text" class="form-control" placeholder="Title" required />
 
           </div>
 
