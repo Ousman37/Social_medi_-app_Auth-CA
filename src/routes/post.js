@@ -33,22 +33,13 @@ let postGet = async () => {
         <p class="card-text item-body" style="word-wrap:break-word">${post.body}
         </p>
       </div>
-      <div>
-      <a class="button"style="display: inline-block;background: #fff transparent;
-  border: 1px solid #10f2e7;color: black;
-  padding: 6px 10px;text-align: center;text-decoration: none;display: inline-block;
-  font-size: 1.2rem;margin: 43px 2px;cursor: pointer; font-weight: bold;
-      font-size: 10px;
-  transition: all 0.3s linear; href="/single-post/${post.id}">View This</a>
-    <a class="button"style="display: inline-block;
-      background: #ff0081; transparent;border: none;color: #fff; font-weight: bold;
-      font-size: 10px; 
-  padding: 6px 10px;text-align: center;text-decoration: none;
-  display: inline-block;font-size: 1.2rem;margin: 43px 2px;
+      <div> 
+      <a  style="text-decoration: underline;  cursor: pointer;" href="/single-post/${post.id}">View This</a>
+    <a style="text-decoration: underline;"
   cursor: pointer; href="/update/${post.id}">Update</a>
 <a class="button"style="display: inline-block;
    background: #fff transparent;border: 1px solid red;color: red;font-weight: bold;
-      font-size: 10px;padding: 6px 10px;
+      font-size: 1.9rem;padding: 5px 8px;
   text-align: center;text-decoration: none;display: inline-block;
   font-size: 1.2rem;margin: 43px 2px;cursor: pointer;
   transition: all 0.3s linear;" onclick="deletePost(${post.id})">Delete</a>
