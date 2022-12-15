@@ -113,8 +113,8 @@ header {
 .nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: #343a40;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #17a2b8;
 }
 
 .menu-toggle-icon {
@@ -234,15 +234,13 @@ header {
 }
 
 .x-large {
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 20rem;
 }
 
-.fa-facebook {
-  color: #0b4955;
-}
-
+/* Search container */
 .search-container input {
   padding: 6px;
   margin-top: 8px;

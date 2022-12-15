@@ -11,9 +11,9 @@
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Inbound Media | Post</title>
+  <title>Inbound Media | Posts Page</title>
 
-  <script src="./routes/post.js" defer></script>
+  <script type="module" src="./routes/post.js" defer></script>
   <script src="./routes/mobile.js" defer></script>
 
 
@@ -65,29 +65,26 @@
   <section class="landing">
     <div class="dark-overlay">
       <div class="landing-inner">
-        <!--<h2 class="x-large">Here are our amazing posts from all over the world</h2>-->
+
         <div class="search-container sm-hidden">
           <form action="/action_page.php">
             <input type="text" id="search_input" placeholder="Search here.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
-
       </div>
-
-
+      <h1 class="x-large">Here are our amazing posts from all over the world</h1>
       <div class="container_colum">
         <div id="flash" class="flash-section"></div>
-        <div id="container-card"></div>
+        <div id="container-card">
+
+        </div>
+
       </div>
+
 
     </div>
   </section>
-
-
-
-  <!--<div style="height: 80px"></div>-->
-
 
 </body>
 

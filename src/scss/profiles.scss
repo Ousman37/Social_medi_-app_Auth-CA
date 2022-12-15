@@ -70,8 +70,8 @@ header {
 .nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: $dark-color;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: $primary;
 }
 
 .menu-toggle-icon {
@@ -167,9 +167,6 @@ header {
   border-bottom: 1px solid rgb(62, 55, 55);
 }
 
-.fa-facebook {
-  color: $cyan;
-}
 .container-card {
   display: flex;
   flex-direction: row;
@@ -179,8 +176,6 @@ header {
   gap: 0.25rem;
   margin-bottom: 5rem;
 }
-
-
 
 .dev-container {
   display: flex;
@@ -228,7 +223,6 @@ header {
 
   @media screen and (min-width: 360px) {
     .menu-toggle-icon {
-      
       font-size: 2.3rem;
     }
     .dev-container {

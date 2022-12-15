@@ -10,88 +10,88 @@
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Welcome to the | Inbound Media login </title>
+  <title>Inbound Media | login in to your account </title>
 
 
   <script type="module" src="./routes/login.js" defer></script>
-  <script src="./routes/mobile.js" defer></script>
+  <script  src="./routes/mobile.js" defer></script>
 </head>
 
 <body>
 
   <!--NAV FINISH-->
   <div id="loading" class="loading display-none"></div>
-  <section class="container">
-    <div class="content">
-      <div class="flex-div">
-        <div class="name-content">
-          <h1 class="logo">Inbound Media</h1>
-          <p>Inbound Media helps you connect and share with the people in your
-            life.</p>
-        </div>
-        <div class="wrapper_fixed">
-          <div id="login-error"></div>
-          <form class="form-signin" id="form">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email"
-                 class="form-control" title="Must be a valid email address" placeholder="name@example.com" required/>
 
-            </div>
+  <div class="content">
+    <div class="flex-div">
+      <div class="name-content">
+        <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
 
-            <div class="form-group">
-              <label for="password"> Password</label>
-              <input title="password" pattern="[a-zA-Z0-9]{8,}" class="form-control login"
-                type="text" id="password" name="password" placeholder="qwerldskfjls23" required />
-            </div>
-              <span class="helper-text">
-                <span>Must be at least 8 characters long lowercase letter an uppercase letter a number or special character.</span>
-                
-              </span>
-            
-              <button class="btn btn-primary login">Login</button>
-
-              <a href="#" class="text-decoration-none text-center">
-                <p>Forgotten password?</p>
-              </a>
-
-          </form>
-
-        </div>
-        <p class="account-signup">Don't have an account? <a href="/register">Sign up here</a>
+        <h1 class="x-large">Inbound Media helps you connect and share with the people in your
+          life.</h1>
       </div>
+      <div class="wrapper_fixed">
+        <div id="login-error"></div>
+        <form class="form-signin" id="form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email"
+              class="form-control" title="Must be a valid email address" placeholder="name@example.com" required />
+
+          </div>
+
+          <div class="form-group">
+            <label for="password"> Password</label>
+            <input title="password" pattern="[a-zA-Z0-9]{8,}" class="form-control login" type="text" id="password"
+              name="password" placeholder="qwerldskfjls23" required />
+          </div>
+          <span class="helper-text">
+            <span>Must be at least 8 characters long lowercase letter an uppercase letter a number or special
+              character.</span>
+
+          </span>
+
+          <button class="btn btn-primary">Login</button>
+
+          <a href="#" class="text-decoration-none text-center">
+            <p>Forgotten password?</p>
+          </a>
+
+        </form>
+
+      </div>
+      <p class="account-signup">Don't have an account? <a href="/register">Sign up here</a>
     </div>
-  </section>
+  </div>
+
   <!-- * Footer start -->
-  <footer class="bg-white p-4 text-muted">
+  <footer class="bg-white text-muted">
     <div class="footer_container">
       <!-- !language choice -->
       <div class="languagep">
-        <p class="mx-2 fs-7 mb-0">English (US)</p>
-        <p class="mx-2 fs-7 mb-0">Norwegian Arabic</p>
-        <p class="mx-2 fs-7 mb-0">, French, Portuguese, </p>
-        <p class="mx-2 fs-7 mb-0">Spanish, Chinese,</p>
-        <p class="mx-2 fs-7 mb-0">Russian</p>
+        <p class="link">English (US)</p>
+        <p class="link">Norwegian Arabic</p>
+        <p class="link">, French, Portuguese, </p>
+        <p class="link">Spanish, Chinese,</p>
+        <p class="link">Russian</p>
       </div>
       <hr />
       <!-- actions -->
       <div class="language">
-        <p class="mx-2 fs-7 mb-0">Sign Up</p>
-        <p class="mx-2 fs-7 mb-0">Login</p>
-        <p class="mx-2 fs-7 mb-0">Messenger</p>
-        <p class="mx-2 fs-7 mb-0">Inbound Media Lite</p>
-        <p class="mx-2 fs-7 mb-0">Watch</p>
+        <p class="link">Sign Up</p>
+        <p class="link">Login</p>
+        <p class="link">Messenger</p>
+        <p class="link">Inbound Media Lite</p>
+        <p class="link">Watch</p>
       </div>
       <!-- !copy -->
-      <div class="mt-4 mx-2">
-        <p class="fs-7">Inbound Media &copy; 2022</p>
+      <div class="copywriter">
+        <p class="link">Inbound Media &copy; 2022</p>
       </div>
     </div>
   </footer>
 
   <!-- *Footer ends here -->
-
-
 </body>
 
 </html>

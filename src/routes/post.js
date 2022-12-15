@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 const baseUrl = 'https://api.noroff.dev/api/v1';
 
@@ -29,6 +30,7 @@ let postGet = async () => {
             str += `<div class="container-item card" style="width:300px;height:auto">
       <span class="item-title" style='font-size:16px;word-wrap:break-word'>${post.title}</span>
       <img class="card-img-top" src="${media}" alt="Card image cap">
+          
       <div class="card-body">
         <p class="card-text item-body" style="word-wrap:break-word">${post.body}
         </p>
@@ -40,8 +42,8 @@ let postGet = async () => {
 <a class="button"style="display: inline-block;
    background: #fff transparent;border: 1px solid red;color: red;font-weight: bold;
       font-size: 1.9rem;padding: 5px 8px;
-  text-align: center;text-decoration: none;display: inline-block;
-  font-size: 1.2rem;margin: 43px 2px;cursor: pointer;
+  text-align: center;text-decoration: none;display:inline-block;
+  font-size: 1.2rem;cursor: pointer;
   transition: all 0.3s linear;" onclick="deletePost(${post.id})">Delete</a>
       </div>
     </div>`;

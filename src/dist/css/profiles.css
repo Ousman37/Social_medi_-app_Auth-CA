@@ -98,8 +98,8 @@ header {
 .nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: #343a40;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #17a2b8;
 }
 
 .menu-toggle-icon {
@@ -192,10 +192,6 @@ header {
 
 .header.active-scroll {
   border-bottom: 1px solid rgb(62, 55, 55);
-}
-
-.fa-facebook {
-  color: #0b4955;
 }
 
 .container-card {

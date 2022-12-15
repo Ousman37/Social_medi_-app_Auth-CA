@@ -70,8 +70,8 @@ header {
 .nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: $dark-color;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: $primary;
 }
 
 .menu-toggle-icon {
@@ -209,9 +209,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.fa-facebook {
-  color: $cyan;
-}
+
 
 .container_bg {
   display: flex;

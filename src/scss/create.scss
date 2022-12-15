@@ -66,11 +66,11 @@ header {
   color: #0b1d26;
 }
 
-.nav-branding {
+.nav-branding a {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: $dark-color;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: $primary;
 }
 
 .menu-toggle-icon {
@@ -196,10 +196,6 @@ header {
   margin-bottom: 1rem;
 }
 
-.fa-facebook {
-  color: $cyan;
-}
-
 .container_bg {
   display: flex;
   flex-direction: column;
@@ -209,8 +205,6 @@ header {
   margin-top: -0.3rem;
   margin-bottom: 10rem;
 }
-
-
 
 .form-group {
   display: flex;
@@ -255,7 +249,6 @@ label {
   text-transform: uppercase;
 }
 
-
 .btn-primary {
   background: $primary-color;
   color: $light-color;
@@ -294,7 +287,6 @@ label {
   font-size: 1.2rem;
   margin: 43px 2px;
   cursor: pointer;
-  
 }
 /*---- language ------*/
 .language {
@@ -534,7 +526,6 @@ label {
     .nav-branding {
       text-transform: uppercase;
       min-width: 10.8rem;
-      color: #343a40;
       font-size: 2.3rem;
     }
     .container_bg {

@@ -95,11 +95,11 @@ header {
   color: #0b1d26;
 }
 
-.nav-branding {
+.nav-branding a {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: #343a40;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #17a2b8;
 }
 
 .menu-toggle-icon {
@@ -222,10 +222,6 @@ header {
   font-size: 1.25rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-}
-
-.fa-facebook {
-  color: #0b4955;
 }
 
 .container_bg {
@@ -552,7 +548,6 @@ label {
   .nav-branding {
     text-transform: uppercase;
     min-width: 10.8rem;
-    color: #343a40;
     font-size: 2.3rem;
   }
   .container_bg {

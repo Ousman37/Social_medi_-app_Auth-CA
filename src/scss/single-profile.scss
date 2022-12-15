@@ -72,8 +72,8 @@ header {
 .nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
-  color: $dark-color;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: $primary;
 }
 
 .menu-toggle-icon {
@@ -570,7 +570,7 @@ img:hover {
       }
       #profile-container {
         width: 100%;
-        height: 33vh;
+        height: 50vh;
         padding: inherit;
         align-items: flex-start;
         background-color: #17a2b8;
@@ -630,6 +630,13 @@ img:hover {
         margin-bottom: 19px;
         overflow: hidden;
       }
+      #profile-container {
+        width: 100%;
+        height: 56vh;
+        padding: inherit;
+        align-items: flex-start;
+        background-color: #17a2b8;
+      }
     }
     @media screen and (min-width: 1024px) {
       .container {
@@ -687,7 +694,7 @@ img:hover {
       }
       #profile-container {
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         padding: inherit;
         align-items: flex-start;
         background-color: #17a2b8;

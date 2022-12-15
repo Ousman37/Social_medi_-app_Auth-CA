@@ -4,16 +4,29 @@
 
 @import 'base';
 
-/* Reusable */
-.container {
-  max-width: 144rem;
+
+/*Logo */
+.nav-branding {
+  text-transform: uppercase;
+  min-width: 10.8rem;
+  font-size: 3.5rem;
+  color: $primary;
+}
+
+.account-signup {
+  width: 601px;
+  padding: 10px 20px;
   margin: 0 auto;
-  padding: $section-spacing;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: -34rem;
+  margin-left: -33rem;
 }
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -28,9 +41,8 @@
   margin-right: 20rem;
 }
 
-.name-content .logo {
-  font-size: 3.5rem;
-  color: $primary;
+.x-large {
+  color: gray;
 }
 
 .name-content p {
@@ -52,8 +64,8 @@ form {
 }
 
 .form-signin {
-  width: 530px;
-  height: 380px;
+  width: 328px;
+  height: 278px;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
@@ -69,7 +81,13 @@ form {
   border: 1.8px solid #1877f2;
 }
 
-#form .login {
+#form input {
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+#form .btn-primary {
   outline: none;
   border: 1px solid #ccc;
   cursor: pointer;
@@ -89,14 +107,6 @@ form {
   font-size: 1rem;
   padding-top: 0.8rem;
   color: #1877f2;
-}
-
-.account-signup {
-  width: 298px;
-  padding: 6px 25px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin-bottom: 10rem;
 }
 
 #form hr {
@@ -155,13 +165,6 @@ form {
   bottom: 0;
   width: 100%;
 }
-/*
-.account-signup {
-  
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin-bottom: 10rem;
-}*/
 
 .text-center {
   margin-top: -1rem;
@@ -171,9 +174,130 @@ form {
   flex-direction: column;
   justify-content: space-between;
 }
-/* //.........Media Query.........// */
 
-@media (max-width: 280px) {
+/* //.........Media Query.........// */
+@media (max-width: 375px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 328px;
+    margin-bottom: -42rem;
+    margin-left: 0rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+  @media (max-width: 500px) {
+    html {
+      font-size: 60%;
+    }
+
+    .name-content {
+      margin: 0;
+      text-align: center;
+    }
+
+    form {
+      width: 300px;
+      height: fit-content;
+    }
+
+    form input {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    #form a {
+      font-size: 1.5rem;
+    }
+
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+    }
+    .account-signup {
+      width: 328px;
+      padding: 10px 20px;
+      margin: 0 auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: -42rem;
+      margin-left: 0rem;
+    }
+
+    @media (max-width: 412px) {
+      html {
+        font-size: 60%;
+      }
+
+      .name-content {
+        margin: 0;
+        text-align: center;
+      }
+
+      form {
+        width: 300px;
+        height: fit-content;
+      }
+
+      form input {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      #form a {
+        font-size: 1.5rem;
+      }
+
+      .flex-div {
+        display: flex;
+        flex-direction: column;
+      }
+      .account-signup {
+        width: 328px;
+        margin-bottom: -42rem;
+        margin-left: 0rem;
+      }
+      .content {
+        position: absolute;
+        top: 19%;
+        left: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
   html {
     font-size: 60%;
   }
@@ -184,7 +308,7 @@ form {
   }
 
   #form {
-    width: 259px;
+    width: 300px;
     height: fit-content;
   }
 
@@ -193,210 +317,138 @@ form {
     font-size: 1.5rem;
   }
 
-  #form .login {
+  #form {
     font-size: 1.5rem;
   }
-  @media screen and (min-width: 360px) {
-    html {
-      font-size: 60%;
-    }
 
-    .name-content {
-      margin: 0;
-      text-align: center;
-    }
-
-    #form {
-      width: 259px;
-      height: fit-content;
-    }
-
-    #form input {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    #form .login {
-      font-size: 1.5rem;
-    }
-
-    #form a {
-      font-size: 1.5rem;
-    }
-
-    #form .create-account {
-      font-size: 1.5rem;
-    }
-
-    .flex-div {
-      display: flex;
-      flex-direction: column;
-    }
-    .account-signup {
-      width: 254px;
-      padding: 6px 25px;
-    }
-  }
-  @media screen and (min-width: 412px) {
-    html {
-      font-size: 60%;
-    }
-
-    .name-content {
-      margin: 0;
-      text-align: center;
-    }
-
-    #form {
-      width: 259px;
-      height: fit-content;
-    }
-
-    #form input {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    #form .login {
-      font-size: 1.5rem;
-    }
-
-    #form a {
-      font-size: 1.5rem;
-    }
-
-    #form .create-account {
-      font-size: 1.5rem;
-    }
-
-    .flex-div {
-      display: flex;
-      flex-direction: column;
-    }
-    .account-signup {
-      width: 254px;
-      padding: 6px 25px;
-    }
+  #form a {
+    font-size: 1.5rem;
   }
 
-  @media screen and (min-width: 540px) {
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 322px;
+    margin-bottom: -34rem;
+    margin-left: 3rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 810px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 322px;
+    margin-bottom: -34rem;
+    margin-left: 4rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  /*
+  #form  {
+    font-size: 1.5rem;
+  }*/
+
+  #form a {
+    font-size: 1.5rem;
+  }
+
+  #form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (orientation: landscape) and (max-height: 500px) {
     .header {
       height: 90vmax;
-    }
-    .content {
-      position: absolute;
-      top: 51%;
-      left: 47%;
-      transform: translate(-50%, -50%);
-    }
-    .account-signup {
-      width: 254px;
-      padding: 6px 25px;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    html {
-      font-size: 60%;
-    }
-
-    .name-content {
-      margin: 0;
-      text-align: center;
-    }
-
-    #form {
-      width: 300px;
-      height: fit-content;
-    }
-
-    #form input {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    #form .login {
-      font-size: 1.5rem;
-    }
-
-    #form a {
-      font-size: 1.5rem;
-    }
-
-    #form .create-account {
-      font-size: 1.5rem;
-    }
-
-    .flex-div {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    .account-signup {
-      width: 298px;
-      padding: 6px 25px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.1);
-      margin-bottom: 10rem;
-    }
-  }
-
-  @media screen and (min-width: 820px) {
-    .account-signup {
-      width: 298px;
-      padding: 6px 25px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.1);
-      margin-bottom: 10rem;
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    html {
-      font-size: 60%;
-    }
-
-    .name-content {
-      margin: 0;
-      text-align: center;
-    }
-
-    #form {
-      width: 300px;
-      height: fit-content;
-    }
-
-    #form input {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    #form .login {
-      font-size: 1.5rem;
-    }
-
-    #form a {
-      font-size: 1.5rem;
-    }
-
-    #form .create-account {
-      font-size: 1.5rem;
-    }
-
-    .flex-div {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    .account-signup {
-      width: 298px;
-      padding: 6px 25px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.1);
-      margin-bottom: 10rem;
     }
   }
 }
