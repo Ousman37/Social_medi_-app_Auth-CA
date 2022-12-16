@@ -471,8 +471,8 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -7rem;
-    margin-bottom: 1rem;
+    margin-top: -6rem;
+    margin-bottom: -7rem;
     font-size: 3rem;
     font-weight: 300;
     padding: 2rem;
@@ -491,7 +491,7 @@ label {
   .form-signin {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -50rem;
+    margin-bottom: -38rem;
     height: 100%;
   }
   .form-group {
@@ -524,12 +524,16 @@ label {
     margin-top: -4.3rem;
     margin-bottom: -23rem;
   }
-  /*
-  .x-large {
-    font-size: 1rem;
-    line-height: 1.2;
-    margin-bottom: -5rem;
-  }*/
+  .page-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2rem;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -544,7 +548,7 @@ label {
   .form-signin {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -50rem;
+    margin-bottom: -38rem;
     height: 100%;
   }
   .form-group {
@@ -582,12 +586,16 @@ label {
     margin-top: -4.3rem;
     margin-bottom: -23rem;
   }
-  /*
-  .x-large {
-    font-size: 1.25rem;
-    line-height: 1.2;
-    margin-bottom: -6rem;
-  }*/
+  .page-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6rem;
+    margin-bottom: 7rem;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2rem;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -602,7 +610,7 @@ label {
   .form-signin {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -50rem;
+    margin-bottom: -38rem;
     height: 100%;
   }
   .form-group {
