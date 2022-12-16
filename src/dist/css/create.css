@@ -379,15 +379,10 @@ label {
     border-radius: 0.25rem;
     border: 1px solid #e6e6e6;
   }
-  .page-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
-    font-size: 1.9rem;
-    font-weight: 300;
-    padding: 2rem;
+  .x-large {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: -6rem;
   }
   .footer {
     display: flex;
@@ -417,15 +412,10 @@ label {
     margin-top: -4.3rem;
     margin-bottom: -23rem;
   }
-  .page-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 2rem;
+  .x-large {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: -6rem;
   }
   .footer {
     display: flex;
@@ -474,15 +464,10 @@ label {
     margin-top: -4.3rem;
     margin-bottom: -23rem;
   }
-  .page-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 2rem;
+  .x-large {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: -6rem;
   }
   .footer {
     display: flex;
@@ -531,15 +516,10 @@ label {
     margin-top: -4.3rem;
     margin-bottom: -23rem;
   }
-  .page-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 2rem;
+  .x-large {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: -6rem;
   }
   .footer {
     display: flex;
@@ -593,15 +573,10 @@ label {
     margin-top: -4.3rem;
     margin-bottom: -23rem;
   }
-  .page-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 2rem;
+  .x-large {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: -6rem;
   }
   .footer {
     display: flex;

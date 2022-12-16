@@ -193,9 +193,12 @@ header {
   background-color: rgba(0, 0, 0, 0.07);
 }
 .x-large {
-  font-size: $font-size-lg;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -8rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .btn-logout {
@@ -220,18 +223,6 @@ header {
   padding: 1rem;
   margin-top: 0.7rem;
   margin-bottom: 10rem;
-}
-
-.headline-three,
-.headline_two,
-.headliner {
-  background-color: #dc3545;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
-  color: $light-color;
 }
 
 .form-group {
@@ -302,9 +293,7 @@ label {
   }
 }
 
-.tag a {
-  color: $primary-color;
-}
+
 /*---- language ------*/
 .language {
   display: flex;
@@ -416,7 +405,7 @@ label {
       height: 100%;
     }
     .form-group {
-      margin-bottom: 2rem;
+      margin-bottom: -2rem;
     }
     .language {
       display: flex;
@@ -947,7 +936,7 @@ label {
     .form-signin {
       width: 50%;
       margin: 0 auto;
-      margin-bottom: -50rem;
+      margin-bottom: -44rem;
       height: 100%;
     }
     .form-group {
@@ -1039,7 +1028,7 @@ label {
       height: 100%;
     }
     .form-group {
-      margin-bottom: -2rem;
+      margin-bottom: 1rem;
     }
     .language {
       display: flex;
