@@ -28,7 +28,7 @@ const getAllProfile = async () => {
             }
 
             str += `<div class="container-item card" style=" width:300px;height:auto">
-     
+       
       <img class="round-img" src="${media}" alt="Card image cap">
      
       <div>

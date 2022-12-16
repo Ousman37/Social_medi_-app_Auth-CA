@@ -166,6 +166,17 @@ header {
   border-bottom: 1px solid rgb(62, 55, 55);
 }
 
+.page-header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 2rem;
+}
+
 .landing {
   position: relative;
   height: 90vh;
@@ -346,11 +357,12 @@ label {
     bottom: 0;
     width: 100%;
   }
+  /*
   .x-large {
     font-size: 1rem;
     line-height: 1.2;
     margin-bottom: -8rem;
-  }
+  }*/
   .landing {
     position: relative;
     height: 87vh;
@@ -371,10 +383,15 @@ label {
       margin-bottom: -23rem;
     }
 
-    .x-large {
-      font-size: 1rem;
-      line-height: 1.2;
-      margin-bottom: -6rem;
+    .page-header h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -7rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 2rem;
     }
     .footer {
       display: flex;
@@ -424,11 +441,15 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
-
-    .x-large {
-      font-size: 1rem;
-      line-height: 1.2;
-      margin-bottom: -11rem;
+    .page-header h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -7rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 2rem;
     }
     .footer {
       display: flex;
@@ -445,7 +466,7 @@ label {
     .form-signin {
       width: 100%;
       margin: 0 auto;
-      margin-bottom: -50rem;
+      margin-bottom: -38rem;
       height: 100%;
     }
     .form-group {
@@ -478,11 +499,15 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
-
-    .x-large {
-      font-size: 1rem;
-      line-height: 1.2;
-      margin-bottom: -5rem;
+    .page-header h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -7rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 2rem;
     }
     .footer {
       display: flex;
@@ -499,7 +524,7 @@ label {
     .form-signin {
       width: 100%;
       margin: 0 auto;
-      margin-bottom: -50rem;
+      margin-bottom: -38rem;
       height: 100%;
     }
     .form-group {
@@ -537,10 +562,15 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
-    .x-large {
-      font-size: 1.25rem;
-      line-height: 1.2;
-      margin-bottom: -6rem;
+    .page-header h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -7rem;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 2rem;
     }
     .footer {
       display: flex;
@@ -556,7 +586,7 @@ label {
     .form-signin {
       width: 100%;
       margin: 0 auto;
-      margin-bottom: -50rem;
+      margin-bottom: -38rem;
       height: 100%;
     }
     .form-group {
@@ -589,11 +619,12 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
+    /*
     .x-large {
       font-size: 1.25rem;
       line-height: 1.2;
       margin-bottom: -8rem;
-    }
+    }*/
     .footer {
       display: flex;
       flex-direction: column;
@@ -642,12 +673,12 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
-
+    /*
     .x-large {
       font-size: 1.3rem;
       line-height: 1.2;
       margin-bottom: -8rem;
-    }
+    }*/
     .footer {
       display: flex;
       flex-direction: column;
@@ -689,13 +720,13 @@ label {
     }
     .form-control {
       width: 508px;
-    }
+    } /*
     .x-large {
       text-transform: lowercase;
       font-size: 2.3rem;
       line-height: 1.2;
       margin-bottom: -4rem;
-    }
+    }*/
   }
   @media screen and (min-width: 800px) {
     .menu-toggle-icon {
@@ -712,12 +743,12 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
-
+    /*
     .x-large {
       font-size: 2.25rem;
       line-height: 1.2;
       margin-bottom: 2rem;
-    }
+    }*/
     .footer {
       display: flex;
       flex-direction: column;
@@ -858,12 +889,12 @@ label {
       margin-top: -4.300000000000001rem;
       margin-bottom: -23rem;
     }
-
+    /*
     .x-large {
       font-size: 1.5rem;
       line-height: 1.2;
       margin-bottom: 2rem;
-    }
+    }*/
     .footer {
       display: flex;
       flex-direction: column;
@@ -935,12 +966,12 @@ label {
       }
       .header::before {
         display: none;
-      }
+      } /*
       .x-large {
         font-size: 2rem;
         line-height: 1.2;
         margin-bottom: -7rem;
-      }
+      }*/
     }
     @media screen and (min-width: 1024px) {
       .nav-mobile {
@@ -990,12 +1021,12 @@ label {
         padding: 1rem;
         margin-top: -4.300000000000001rem;
         margin-bottom: -23rem;
-      }
+      } /*
       .x-large {
         font-size: $font-size-lg;
         line-height: 1.2;
         margin-bottom: -7rem;
-      }
+      }*/
       .footer {
         display: flex;
         flex-direction: column;
@@ -1080,12 +1111,12 @@ label {
       }
 
       //Navigation elements
-
+      /*
       .x-large {
         font-size: $font-size-lg;
         line-height: 1.2;
         margin-bottom: -7rem;
-      }
+      }*/
       .footer {
         display: flex;
         flex-direction: column;
