@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
     heroData.style.opacity = 1 - scrollPosition + 0.002;
 });
 
-document.addEventListener('click', e => {
+menuToggleIcon.addEventListener('click', e => {
     const isDropdownButton = e.target.matches('[data-dropdown-button]');
     if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return;
 

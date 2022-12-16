@@ -2,10 +2,12 @@ import { getSinglePostUrl } from './url.js';
 import { fetchGet} from './api.js';
 let url = window.location.href;
 var id = url.split('/')[4];
+console.log(id);
 //POST DATA
 // eslint-disable-next-line no-unused-vars
 let postGet = async () => {
     fetchGet(`${getSinglePostUrl}/${id}`).then(data => {
+        console.log(data, 'data');
         if (data.errors) {
             document.getElementById('flash').innerHTML = `<span style="color:tomato">${data.errors[0].message}</span>`;
         } else {

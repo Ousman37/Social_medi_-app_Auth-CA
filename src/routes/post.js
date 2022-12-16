@@ -36,15 +36,14 @@ let postGet = async () => {
         </p>
       </div>
       <div> 
-      <a  style="text-decoration: underline;  cursor: pointer;" href="/single-post/${post.id}">View This</a>
-    <a style="text-decoration: underline;"
-  cursor: pointer; href="/update/${post.id}">Update</a>
-<a class="button"style="display: inline-block;
+      <a href="/single-post/${post.id}">View This</a>
+    <a href="/update/${post.id}">Update</a>
+<a class="button" style="display: inline-block;
    background: #fff transparent;border: 1px solid red;color: red;font-weight: bold;
       font-size: 1.9rem;padding: 5px 8px;
   text-align: center;text-decoration: none;display:inline-block;
   font-size: 1.2rem;cursor: pointer;
-  transition: all 0.3s linear;" onclick="deletePost(${post.id})">Delete</a>
+  transition: all 0.3s linear;"  onclick="deletePost(${post.id})">Delete</a>
       </div>
     </div>`;
         });

@@ -166,37 +166,47 @@ header {
 .header.active-scroll {
   border-bottom: 1px solid rgb(62, 55, 55);
 }
+// .d-grid {
+//   display: grid;
+// }
+// .container-page {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   margin: 0 auto;
+//   max-width: 1200px;
+//   padding: 2rem;
+//   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+// }
 
-.page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  z-index: 1;
-  background-color: #fff;
-  box-sizing: border-box;
-  transition: transform 0.25s;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  will-change: transform;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
+// .page-container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 0 2rem;
+//   position: relative;
+//   z-index: 1;
+//   box-sizing: border-box;
+//   transition: transform 0.25s;
+//   overflow: hidden;
+//   transform: translate3d(0, 0, 0);
+// }
 
-.page-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-}
+// .page-container::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   height: 100vh;
+// }
 
-.page-header h1 {
+.x-large {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: center;
+  margin-left: -6rem;
   margin-bottom: -15rem;
   font-size: 3rem;
   font-weight: 300;
@@ -213,14 +223,15 @@ header {
 
 .dev-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  padding: 5rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
+  margin-life: -6rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 8rem;
@@ -254,22 +265,31 @@ header {
   .menu-toggle-icon {
     font-size: 2.3rem;
   }
+  .nav-branding {
+    text-transform: uppercase;
+    min-width: 10.8rem;
+    font-size: 1.8rem;
+    color: $primary-color;
+  }
 
   @media screen and (min-width: 360px) {
     .menu-toggle-icon {
       font-size: 2.3rem;
     }
-    .dev-container {
-      padding: 3rem;
+    .nav-branding {
+      text-transform: uppercase;
+      min-width: 10.8rem;
+      font-size: 1.8rem;
+      color: $primary-color;
     }
   }
-  // @media screen and (min-width: 360px) {
-  //   .menu-toggle-icon {
-  //     width: 14.5rem;
-  //     font-size: 2.3rem;
-  //     margin-right: -5rem;
-  //   }
-  // }
+  @media screen and (min-width: 360px) {
+    .menu-toggle-icon {
+      width: 14.5rem;
+      font-size: 2.3rem;
+      margin-right: -5rem;
+    }
+  }
   @media screen and (min-width: 375px) {
     .menu-toggle-icon {
       width: 14.5rem;
@@ -283,12 +303,24 @@ header {
       font-size: 2.3rem;
       margin-right: -5rem;
     }
+    .nav-branding {
+      text-transform: uppercase;
+      min-width: 10.8rem;
+      font-size: 1.8rem;
+      color: $primary-color;
+    }
   }
   @media screen and (min-width: 768px) {
     .menu-toggle-icon {
       width: 14.5rem;
       font-size: 2.3rem;
       margin-right: -5rem;
+    }
+    .nav-branding {
+      text-transform: uppercase;
+      min-width: 10.8rem;
+      font-size: 1.8rem;
+      color: $primary-color;
     }
   }
   @media screen and (min-width: 800px) {
@@ -338,6 +370,12 @@ header {
     .header::before {
       display: none;
     }
+    .nav-branding {
+      text-transform: uppercase;
+      min-width: 10.8rem;
+      font-size: 1.8rem;
+      color: $primary-color;
+    }
 
     @media screen and (min-width: 991px) {
       .nav-mobile {
@@ -378,6 +416,12 @@ header {
       }
       .header::before {
         display: none;
+      }
+      .nav-branding {
+        text-transform: uppercase;
+        min-width: 10.8rem;
+        font-size: 1.8rem;
+        color: $primary-color;
       }
     }
     @media screen and (min-width: 1024px) {
