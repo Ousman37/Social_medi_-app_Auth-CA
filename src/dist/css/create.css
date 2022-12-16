@@ -95,7 +95,7 @@ header {
   color: #0b1d26;
 }
 
-.nav-branding a {
+.nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
   font-size: 3rem;
@@ -919,7 +919,7 @@ label {
   .nav-mobile,
 .list {
     flex-direction: row;
-    gap: 0;
+    gap: 2;
   }
   .nav-link {
     display: block;

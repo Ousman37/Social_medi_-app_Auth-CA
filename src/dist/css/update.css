@@ -351,7 +351,6 @@ label {
 
 /* Posts Page!*/
 /*----- Media ----- */
-/*----- Media ----- */
 @media screen and (min-width: 280px) {
   .menu-toggle-icon {
     /*width: 14.5rem;*/
@@ -563,7 +562,6 @@ label {
   .nav-branding {
     text-transform: uppercase;
     min-width: 10.8rem;
-    color: #343a40;
     font-size: 2.3rem;
   }
   .container_bg {
