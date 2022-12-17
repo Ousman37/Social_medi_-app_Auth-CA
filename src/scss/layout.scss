@@ -32,9 +32,7 @@
 .sm-screen-hidden {
   display: none !important;
 }
-
 //Navigation elements
-
 header {
   background-color: $secondary-colo;
   position: fixed;
@@ -42,7 +40,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 999;
-  margin-bottom: 8vw!important
+  margin-bottom: 8vw !important;
 }
 
 .nav li a {

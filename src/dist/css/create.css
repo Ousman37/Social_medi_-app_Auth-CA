@@ -644,7 +644,7 @@ label {
     width: 100%;
   }
   .form-control {
-    width: 285px;
+    width: 346px;
   }
   .form-signin {
     width: 100%;
@@ -788,7 +788,7 @@ label {
     width: 100%;
   }
   .form-control {
-    width: 533px;
+    width: 341px;
   }
   .form-signin {
     width: 50%;
@@ -1071,10 +1071,9 @@ label {
     width: 100%;
   }
   .form-control {
-    width: 760px;
+    width: 557px;
   }
   .form-signin {
-    width: 70%;
     margin: 0 auto;
     margin-bottom: -50rem;
     height: 100%;
