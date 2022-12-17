@@ -61,38 +61,7 @@ document.getElementById('btn-logout').addEventListener('click', () => {
     window.location = '/login';
 });
 
-function deletePost(id) {
-    const baseUrl = 'https://api.noroff.dev/api/v1';
-    const updAndDelPostUrl = `${baseUrl}/social/posts/${id}`;
 
-    let token = '';
-    if (localStorage.getItem('token')) {
-        console.log(localStorage.getItem('token'));
-        token = localStorage.getItem('token');
-
-        const options = {
-            method: 'DELETE',
-            headers: {
-                Authorization: `Bearer ${token}`,
-                'Content-Type': 'application/json',
-            },
-        };
-
-        fetch(updAndDelPostUrl, options)
-            .then(response => response.json())
-            .then(response => {
-                if (response.errors) {
-                    document.getElementById(
-                        'flash'
-                    ).innerHTML = `<span style="color:tomato">${response.errors[0].message}</span>`;
-                } else {
-                    document.getElementById('flash').innerHTML =
-            '<span style="color:green">Post Deleted Successfully!</span>';
-                    postGet();
-                }
-            });
-    }
-}
 // User search the post content feed ====*//
 document.getElementById('search_input').addEventListener('keyup', () => {
     let inpVal = document.getElementById('search_input').value.toUpperCase();

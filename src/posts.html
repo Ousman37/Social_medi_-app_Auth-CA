@@ -15,6 +15,8 @@
 
   <script type="module" src="./routes/post.js" defer></script>
   <script src="./routes/mobile.js" defer></script>
+  <script src="./routes/delet.js" defer></script>
+
 
 
 </head>
@@ -27,26 +29,18 @@
       <div class="nav-mobile" id="menu">
         <ul class="list">
           <li class="list-item">
-            <a href="profile.html" class="nav-link">Profiles</a>
+            <a href="/profile" class="nav-link">Profiles</a>
           </li>
           <li class="list-item">
-            <a href="single-profile.html" class="nav-link">Single Profile</a>
+            <a href="/" class="nav-link current">Posts</a>
           </li>
           <li class="list-item">
-            <a href="posts.html" class="nav-link current">Posts</a>
-          </li>
-          <li class="list-item">
-            <a href="single-post.html" class="nav-link">Single Post</a>
-          </li>
-          <li class="list-item">
-            <a href="create-post.html" class="nav-link">Create Post</a>
-          </li>
-          <li class="list-item">
-            <a href="update.html" class="nav-link">Update Post</a>
+            <a href="/create-post" class="nav-link">Create Post</a>
           </li>
 
+
           <li class="list-item">
-            <a href="register.html" class="nav-link">Register</a>
+            <a href="/register" class="nav-link">Register</a>
           </li>
 
           <button class="btn btn-logout" id="btn-logout">Log Out
@@ -62,7 +56,7 @@
   </header>
   <!--NAV FINISH-->
 
- 
+
   <section class="landing">
     <div class="dark-overlay">
       <div class="landing-inner">
@@ -74,10 +68,9 @@
         </div>
       </div>
       <h1 class="x-large">Here are our amazing posts from all over the world</h1>
+      <div id="flash" class="flash-section"></div>
       <div class="container_colum">
-        <div id="flash" class="flash-section"></div>
         <div id="container-card"></div>
-
       </div>
 
 
