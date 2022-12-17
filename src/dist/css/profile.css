@@ -98,7 +98,7 @@ header {
 .nav-branding {
   text-transform: uppercase;
   min-width: 10.8rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #17a2b8;
 }
 
@@ -195,15 +195,14 @@ header {
 }
 
 .x-large {
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: center;
-  margin-left: -6rem;
-  margin-bottom: -15rem;
-  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.9rem;
   font-weight: 300;
-  padding: 8rem;
 }
 
 .container-card {
@@ -221,7 +220,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-life: -6rem;
+  margin-left: -6rem;
   margin-bottom: 5rem;
   padding: 1rem;
   justify-content: space-between;
@@ -275,6 +274,22 @@ header {
     font-size: 1.8rem;
     color: #17a2b8;
   }
+  .nav-branding {
+    text-transform: uppercase;
+    min-width: 10.8rem;
+    font-size: 2rem;
+    color: #17a2b8;
+  }
+  .x-large {
+    max-width: 67%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+  }
 }
 @media screen and (min-width: 280px) and (min-width: 360px) {
   .menu-toggle-icon {
@@ -282,12 +297,44 @@ header {
     font-size: 2.3rem;
     margin-right: -5rem;
   }
+  .nav-branding {
+    text-transform: uppercase;
+    min-width: 10.8rem;
+    font-size: 2rem;
+    color: #17a2b8;
+  }
+  .x-large {
+    max-width: 62%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+  }
 }
 @media screen and (min-width: 280px) and (min-width: 375px) {
   .menu-toggle-icon {
     width: 14.5rem;
     font-size: 2.3rem;
     margin-right: -5rem;
+  }
+  .nav-branding {
+    text-transform: uppercase;
+    min-width: 10.8rem;
+    font-size: 2rem;
+    color: #17a2b8;
+  }
+  .x-large {
+    max-width: 67%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 300;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 412px) {
@@ -299,8 +346,18 @@ header {
   .nav-branding {
     text-transform: uppercase;
     min-width: 10.8rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #17a2b8;
+  }
+  .x-large {
+    max-width: 67%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 300;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 768px) {
@@ -312,7 +369,7 @@ header {
   .nav-branding {
     text-transform: uppercase;
     min-width: 10.8rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #17a2b8;
   }
 }
@@ -321,6 +378,12 @@ header {
     width: 14.5rem;
     font-size: 2.3rem;
     margin-right: -5rem;
+  }
+  .nav-branding {
+    text-transform: uppercase;
+    min-width: 10.8rem;
+    font-size: 2rem;
+    color: #17a2b8;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 912px) {
@@ -456,6 +519,16 @@ header {
   }
   .header::before {
     display: none;
+  }
+  .x-large {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-weight: 300;
   }
 }
 
