@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/style.css">
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>Inbound Media | Single Post page </title>
+
+
+  <script type="module" src="./routes/singlepost.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
+
+
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="navbar nav bg-white" id="nav">
+
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="/profile" class="nav-link">Profiles</a>
+          </li>
+          <li class="list-item">
+            <a href="/" class="nav-link current">Posts</a>
+          </li>
+          <li class="list-item">
+            <a href="/create-post" class="nav-link">Create Post</a>
+          </li>
+          
+
+          <li class="list-item">
+            <a href="/register" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
+      </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
+    </nav>
+  </header>
+  <!--NAV FINISH-->
+  <!--NAV FINISH-->
+  <div class="container">
+    <div class="single-page-container page-container">
+      <div class="page-header">
+        <a href="/" class="button">Go To Home</a>
+        <h1 class="x-large"> Here are our single post page </h1>
+        <div class="round-img">
+          <img id="round-img" class="card-img-top" src='' alt="Image is to be here">
+
+          <div class="card-body">
+            <h1 id="single-title" class="single-title"></h1>
+            <p id="single-body" class=""></p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- * Footer start -->
+  <footer class="bg-white p-4 text-muted">
+    <div class="footer_container">
+      <!-- !language choice -->
+      <div class="language">
+        <p class="link">English (US)</p>
+        <p class="link">Norwegian Arabic</p>
+        <p class="link">, French, Portuguese, </p>
+        <p class="link">Spanish, Chinese,</p>
+        <p class="link">Russian</p>
+      </div>
+      <hr />
+      <!-- actions -->
+      <div class="language">
+        <p class="link">Sign Up</p>
+        <p class="link">Login</p>
+        <p class="link">Messenger</p>
+        <p class="link">Inbound Media Lite</p>
+        <p class="link">Watch</p>
+      </div>
+      <!-- !copy -->
+      <span class="Copywriter">
+        &copy; 2022 Inbound Media, Inc. All rights reserved.
+      </span>
+    </div>
+  </footer>
+  <!-- *Footer ends  -->
+</body>
+
+</html>

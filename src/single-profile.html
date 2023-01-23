@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/single-profile.css">
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>Inbound Media | Single Profile Page </title>
+
+
+  <script type="module" src="./routes/singleprofile.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
+
+
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="navbar nav  bg-white" id="nav">
+
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="profile" class="nav-link">Profiles</a>
+          </li>
+          <li class="list-item">
+            <a href="posts" class="nav-link current">Posts</a>
+          </li>
+          <li class="list-item">
+            <a href="create-post" class="nav-link">Create Post</a>
+          </li>
+
+          <li class="list-item">
+            <a href="/register" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
+      </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
+    </nav>
+  </header>
+  <!--NAV FINISH-->
+
+  <div class="container">
+    <a href="profile.html" class="button">Go To Profiles</a>
+
+    <div class="single-page-container">
+      <h1 class="x-large"> Welcome to single profile page</h1>
+      <div class="round-img" id="profile-container">
+        <img id="round-img" class="round-img" src='' alt="Image is to be here">
+        <h1 id="single-title" class="single-title"></h1>
+      </div>
+
+      <div class="card-body">
+        <h2>Followers</h2>
+        <p id="followers" class=""></p>
+      </div>
+      <div>
+        <p id="following"></p>
+        <button id="follow">Follow</button>
+        <button id="unfollow">Unfollow</button>
+
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

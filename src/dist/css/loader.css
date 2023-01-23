@@ -1,0 +1,92 @@
+/* Color */
+/* font size */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Absolute Center Spinner */
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+#loading .spinner {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading .spinner div {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+#loading .spinner .bounce1 {
+  animation-delay: -0.32s;
+}
+
+#loading .spinner .bounce2 {
+  animation-delay: -0.16s;
+}
+
+#loading .spinner .bounce3 {
+  animation-delay: 0s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#loading p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=loader.css.map */

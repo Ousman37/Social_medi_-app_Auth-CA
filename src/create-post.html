@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/create.css">
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <title>Inbound Media | Create Post Page</title>
+
+
+  <script type="module" src="./routes/create-post.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="navbar nav container bg-white" id="nav">
+
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="/profile" class="nav-link">Profiles</a>
+          </li>
+          <li class="list-item">
+            <a href="/" class="nav-link current">Posts</a>
+          </li>
+          <li class="list-item">
+            <a href="create-post" class="nav-link">Create Post</a>
+          </li>
+         
+          <li class="list-item">
+            <a href="/register" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
+      </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
+    </nav>
+  </header>
+  <!--NAV FINISH-->
+  <!--NAV FINISH-->
+
+  <div class="landing">
+    <div class="dark-overlay">
+      <div class="landing-inner">
+        <h1 class="x-large">Create a posts and share your ideas others.</h1>
+      </div>
+
+      <div class="container_bg">
+        <form action="#" class="form-signin" id="form-create">
+          <h2>Create post</h2>
+          <div id="flash"></div>
+          <div class="form-group">
+            <label for="email">Title</label>
+            <input id="title" name="title" required type="text" class="form-control" placeholder="Title" />
+          </div>
+
+          <div class="form-group">
+            <label for="username">Body</label>
+            <input id="body" name="body" required type="text" class="form-control" title="Must Container 4 Characters"
+              placeholder="Body" />
+
+          </div>
+
+          <div class="form-group">
+            <label for="tags">Tags</label>
+            <input id="tags" name="Tags" required type="text" class="form-control" placeholder="Tags" />
+
+          </div>
+
+          <div class="form-group">
+            <label for="media">Media</label>
+            <input id="media" name="Media" required type="text" class="form-control"
+              placeholder="Enter a image link for Banner" />
+          </div>
+          <button class="btn btn-primary create">Create Entry</button>
+
+        </form>
+      </div>
+      <!--ACTUALLY A FORM-->
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- *Footer start -->
+  <footer class="footer">
+    <div class="container_row">
+
+      <!-- *language choice -->
+      <div class="language">
+        <p class="link">English (US)</p>
+        <p class="link">Norwegian Arabic</p>
+        <p class="link">, French, Portuguese, </p>
+        <p class="link">Spanish, Chinese,</p>
+        <p class="link">Russian</p>
+      </div>
+
+      <!-- actions -->
+      <div class="language">
+        <p class="link">Sign Up</p>
+        <p class="link">Login</p>
+        <p class="link">Messenger</p>
+        <p class="link">Inbound Media Lite</p>
+        <p class="link">Watch</p>
+      </div>
+      <!-- !copy -->
+      <div class="Copywriter">
+        <p class="Copywriter">Inbound Media &copy; 2022</p>
+      </div>
+    </div>
+  </footer>
+  <!-- *Footer ends here -->
+
+</body>
+
+</html>

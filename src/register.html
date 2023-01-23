@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/config.css">
+  <title>Inbound Media | Register new account </title>
+
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <script type="module" src="./routes/register.js" defer></script>
+  <script src="./routes/mobile.js" defer></script>
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="navbar nav container bg-white" id="nav">
+
+      <a href="#" class="nav-branding"><i class="fa-brands fa-facebook"></i>INBOUND MEDIA</a>
+      <div class="nav-mobile" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="/profile" class="nav-link">Profiles</a>
+          </li>
+          <li class="list-item">
+            <a href="/" class="nav-link current">Posts</a>
+          </li>
+          <li class="list-item">
+            <a href="/create-post" class="nav-link">Create Post</a>
+          </li>
+         
+
+          <li class="list-item">
+            <a href="/register" class="nav-link">Register</a>
+          </li>
+
+          <button class="btn btn-logout" id="btn-logout">Log Out
+            <i class="fa fa-sign-out" style="font-size: 10px;color:#ffffff"></i> </button>
+
+        </ul>
+      </div>
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i class="fa-solid fa-bars open-menu"></i>
+        <i class="fa-regular fa-x menu-close"></i>
+      </div>
+    </nav>
+  </header>
+  <!--NAV FINISH-->
+  <!--NAV FINISH-->
+
+
+  <div class="landing">
+    <div class="dark-overlay">
+      <div class="landing-inner">
+        <h1 class="x-large">Please enter your credentials to register. Don't keep your secrets, share them anonymously!
+        </h1>
+      </div>
+
+      <div class="container_bg">
+
+        <form action="/register" class="form-signin" id="register-form" method="post"
+          onsubmit="return validateForm(event)">
+          <h2>Register</h2>
+          <div id="flash"></div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" name="email" type="email"
+              class="form-control" title="Must be a valid email address" placeholder="name@example.com" required />
+
+          </div>
+
+          <div class="form-group">
+            <label for="username">Name</label>
+            <input id="username" name="username" type="text" class="form-control" title="Must Container 4 Characters"
+              placeholder="Enter Your Name" required />
+
+          </div>
+
+          <div class="form-group">
+            <label for="avatar">Avatar</label>
+            <input id="avatar" name="avatar" type="text" class="form-control" placeholder="Enter a image link "
+              required />
+
+          </div>
+
+
+          <div class="form-group">
+            <label for="banner">Banner</label>
+            <input id="banner" name="banner" type="text" class="form-control"
+              placeholder="Enter a image link for Banner" required />
+
+          </div>
+
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" pattern="[a-zA-Z0-9]{8,}" class="form-control" placeholder="password"
+              required />
+            <div class="helper-text">
+              <span>Must be at least 8 characters long lowercase letter an uppercase letter a number or special
+                character.</span>
+
+            </div>
+          </div>
+          <button class="btn_fourth">Register</button>
+
+        </form>
+      </div>
+
+
+      <!--ACTUALLY A FORM-->
+
+    </div>
+  </div>
+
+  <div class="dev-container"></div>
+  <!--NAV FINISH-->
+
+  <!-- *Footer start -->
+  <footer class="footer">
+    <div class="container_row">
+
+      <!-- *language choice -->
+      <div class="language">
+        <p class="link">English (US)</p>
+        <p class="link">Norwegian Arabic</p>
+        <p class="link">, French, Portuguese, </p>
+        <p class="link">Spanish, Chinese,</p>
+        <p class="link">Russian</p>
+      </div>
+      <hr />
+      <!-- actions -->
+      <div class="language">
+        <p class="link">Sign Up</p>
+        <p class="link">Login</p>
+        <p class="link">Messenger</p>
+        <p class="link">Inbound Media Lite</p>
+        <p class="link">Watch</p>
+      </div>
+      <!-- !copy -->
+      <span class="Copywriter">
+        &copy; 2022 Inbound Media, Inc. All rights reserved.
+      </span>
+    </div>
+  </footer>
+  <!-- *Footer ends here -->
+
+
+</body>
+
+</html>

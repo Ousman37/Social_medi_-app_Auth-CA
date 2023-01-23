@@ -1,0 +1,445 @@
+/* Color */
+/* font size */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*Logo */
+.nav-branding {
+  text-transform: uppercase;
+  min-width: 10.8rem;
+  font-size: 3.5rem;
+  color: #17a2b8;
+}
+
+.account-signup {
+  width: 601px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: -34rem;
+  margin-left: -33rem;
+}
+
+.content {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.name-content {
+  margin-right: 20rem;
+}
+
+.x-large {
+  color: gray;
+}
+
+.name-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 2rem;
+  width: 329px;
+  height: 242px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-signin {
+  width: 328px;
+  height: 278px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#form input {
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+#form input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+#form input {
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+#form .btn-primary {
+  outline: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+}
+
+#form .login:focus {
+  cursor: pointer;
+}
+
+#form a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  color: #1877f2;
+}
+
+#form hr {
+  background: #f7f7f7;
+  margin: 1rem;
+}
+
+.wrapper_fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.helper-text {
+  color: #ffcc00;
+}
+
+/* login error message*/
+#login-error {
+  margin-bottom: 1em;
+  color: #dc3545;
+}
+
+.alert {
+  margin-bottom: 1em;
+  color: #dc3545;
+}
+
+#form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: -1em;
+  box-shadow: #dc3545;
+}
+
+.btn-primary {
+  background-color: #17a2b8;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.text-center {
+  margin-top: -1rem;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* //.........Media Query.........// */
+@media (max-width: 375px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 328px;
+    margin-bottom: -42rem;
+    margin-left: 0rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+}
+@media (max-width: 375px) and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 328px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: -42rem;
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 375px) and (max-width: 500px) and (max-width: 412px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 328px;
+    margin-bottom: -42rem;
+    margin-left: 0rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  #form {
+    width: 300px;
+    height: fit-content;
+  }
+  #form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form {
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 322px;
+    margin-bottom: -34rem;
+    margin-left: 3rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+}
+@media (max-width: 810px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #form a {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-signup {
+    width: 322px;
+    margin-bottom: -34rem;
+    margin-left: 4rem;
+  }
+  .content {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  /*
+  #form  {
+    font-size: 1.5rem;
+  }*/
+  #form a {
+    font-size: 1.5rem;
+  }
+  #form .create-account {
+    font-size: 1.5rem;
+  }
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) and (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
